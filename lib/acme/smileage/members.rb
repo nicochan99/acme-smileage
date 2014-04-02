@@ -1,0 +1,10 @@
+require "acme/smileage/members/wada_ayaka"
+require "acme/smileage/members/fukuda_kanon"
+require "acme/smileage/members/nakanishi_kana"
+require "acme/smileage/members/takeuchi_akari"
+require "acme/smileage/members/katsuta_rina"
+require "acme/smileage/members/tamura_meimi"
+
+require "acme/smileage/members/maeda_yuuka"
+require "acme/smileage/members/ogawa_saki"
+require "acme/smileage/members/kosuga_fuyuka"
