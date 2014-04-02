@@ -7,7 +7,20 @@ module Acme
     module Members
       class WadaAyaka < Base
         def initialize
-          super
+          @family_name_ja = "和田"
+          @first_name_ja = "彩花"
+          @family_name_en = "Wada"
+          @first_name_en = "Ayaka"
+          @birthday = Date.new(1994, 8, 1)
+          @blood_type = "A"
+          @hometown = "群馬"
+          @emoticon = "川 ´‘ _‘||"
+          @nick = "あやちょ"
+          @color = "Blue"
+          @generation = 1
+          @join_date = Date.new(2009, 4, 4)
+          @graduate_date = nil
+          @blog_url = "http://ameblo.jp/wadaayaka/"
         end
       end
     end

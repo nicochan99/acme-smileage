@@ -7,7 +7,20 @@ module Acme
     module Members
       class OgawaSaki < Base
         def initialize
-          super
+          @family_name_ja = "小川"
+          @first_name_ja = "紗季"
+          @family_name_en = "Ogawa"
+          @first_name_en = "Saki"
+          @birthday = Date.new(1996, 11, 18)
+          @blood_type = "A"
+          @hometown = "埼玉"
+          @emoticon = "|||s･ _･）"
+          @nick = "サキチィー"
+          @color = "Light Green"
+          @generation = 1
+          @join_date = Date.new(2009, 4, 4)
+          @graduate_date = Date.new(2011, 8, 27)
+          @blog_url = nil
         end
       end
     end

@@ -7,7 +7,20 @@ module Acme
     module Members
       class FukudaKanon < Base
         def initialize
-          super
+          @family_name_ja = "福田"
+          @first_name_ja = "花音"
+          @family_name_en = "Fukuda"
+          @first_name_en = "Kanon"
+          @birthday = Date.new(1995, 3, 12)
+          @blood_type = "A"
+          @hometown = "埼玉"
+          @emoticon = "从*・ェ・ﾘ"
+          @nick = "かにょん"
+          @color = "Purple"
+          @generation = 1
+          @join_date = Date.new(2009, 4, 4)
+          @graduate_date = nil
+          @blog_url = "http://ameblo.jp/kanon-fukuda/"
         end
       end
     end

@@ -7,7 +7,20 @@ module Acme
     module Members
       class TakeuchiAkari < Base
         def initialize
-          super
+          @family_name_ja = "竹内"
+          @first_name_ja = "朱莉"
+          @family_name_en = "Takeuchi"
+          @first_name_en = "Akari"
+          @birthday = Date.new(1997, 11, 23)
+          @blood_type = "O"
+          @hometown = "埼玉"
+          @emoticon = "川´・ o ･ﾘ"
+          @nick = "タケちゃん"
+          @color = "Red"
+          @generation = 2
+          @join_date = Date.new(2011, 8, 14)
+          @graduate_date = nil
+          @blog_url = "http://ameblo.jp/smileage-submember/"
         end
       end
     end

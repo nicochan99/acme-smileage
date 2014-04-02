@@ -7,18 +7,20 @@ module Acme
     module Members
       class KatsutaRina < Base
         def initialize
-          @first_name_ja = "勝田"
-          @family_name_ja = "里奈"
-          @first_name_en = "Katsuta"
-          @family_name_en = "Rina"
+          @family_name_ja = "勝田"
+          @first_name_ja = "里奈"
+          @family_name_en = "Katsuta"
+          @first_name_en = "Rina"
           @birthday = Date.new(1998, 4, 6)
           @blood_type = "A"
           @hometown = "東京"
-          @emoticon = nil
+          @emoticon = "ﾘﾅp´ v｀)"
           @nick = "りなぷ～"
           @color = "Yellow"
-          @join_date = Date.new(2011, 10, 16)
+          @generation = 2
+          @join_date = Date.new(2011, 8, 14)
           @graduate_date = nil
+          @blog_url = "http://ameblo.jp/smileage-submember/"
         end
       end
     end
