@@ -15,12 +15,12 @@ module Acme
           @blood_type = "O"
           @hometown = "神奈川"
           @emoticon = "从´’_l ’从"
-          @nick = "ふ～ちゃん"
-          @color = "Orange"
+          @nicknames = ["ふ～ちゃん"]
+          @member_color = "Orange"
           @generation = 2
           @join_date = Date.new(2011, 8, 14)
           @graduate_date = Date.new(2011, 9, 9)
-          @blog_url = nil
+          @blog_link = nil
         end
       end
     end

@@ -15,12 +15,12 @@ module Acme
           @blood_type = "A"
           @hometown = "埼玉"
           @emoticon = "从*・ェ・ﾘ"
-          @nick = "かにょん"
-          @color = "Purple"
+          @nicknames = ["かにょん"]
+          @member_color = "Purple"
           @generation = 1
           @join_date = Date.new(2009, 4, 4)
           @graduate_date = nil
-          @blog_url = "http://ameblo.jp/kanon-fukuda/"
+          @blog_link = "http://ameblo.jp/kanon-fukuda/"
         end
       end
     end

@@ -15,12 +15,12 @@ module Acme
           @blood_type = "A"
           @hometown = "大阪"
           @emoticon = "川*⌒ｖ⌒）"
-          @nick = "かななん"
-          @color = "Sky Blue"
+          @nicknames = ["かななん"]
+          @member_color = "Sky Blue"
           @generation = 2
           @join_date = Date.new(2011, 8, 14)
           @graduate_date = nil
-          @blog_url = "http://ameblo.jp/smileage-submember/"
+          @blog_link = "http://ameblo.jp/smileage-submember/"
         end
       end
     end
