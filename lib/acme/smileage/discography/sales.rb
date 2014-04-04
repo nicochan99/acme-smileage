@@ -2,7 +2,7 @@ require "date"
 
 module Acme
   class Smileage
-    module MusicLibrary
+    class Discography
       class Sales
         attr_reader :name, :first_sales, :total_sales, :ranking
 
