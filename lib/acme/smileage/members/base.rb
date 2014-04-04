@@ -2,7 +2,7 @@ require "date"
 
 module Acme
   class Smileage
-    module Members
+    class Members
       class Base
         attr_reader :family_name_ja, :first_name_ja
         attr_reader :family_name_en, :first_name_en

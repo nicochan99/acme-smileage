@@ -4,7 +4,7 @@ require "acme/smileage/members/base"
 
 module Acme
   class Smileage
-    module Members
+    class Members
       class MaedaYuuka < Base
         def initialize
           @family_name_ja = "前田"
