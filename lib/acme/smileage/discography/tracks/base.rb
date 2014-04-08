@@ -9,7 +9,7 @@ module Acme
       module Tracks
         class Base
           attr_reader :name, :nicknames, :lyric, :composer, :arranger
-          attr_reader :youtube_links, :itunes_link, :jacket_link
+          attr_reader :youtube_links, :itunes_links
 
           def initialize
             @lyric = "つんく♂"
@@ -18,10 +18,6 @@ module Acme
 
           def cover?; false; end
           def remix?; false; end
-
-          def albums
-            
-          end
         end
       end
     end

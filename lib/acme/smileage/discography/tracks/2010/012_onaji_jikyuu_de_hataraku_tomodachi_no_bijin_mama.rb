@@ -1,0 +1,78 @@
+# -*- encoding: utf-8 -*-
+
+require "acme/smileage/discography/tracks/base"
+
+module Acme
+  class Smileage
+    class Discography
+      module Tracks
+        class OnajiJikyuuDeHatarakuTomodachiNoBijinMama < Base
+          include Singleton
+
+          def initialize
+            super
+            @name = "同じ時給で働く友達の美人ママ"
+            @nicknames = ["時給", "美人ママ"]
+            @arranger = "山崎淳"
+            @youtube_links = [
+              {
+                :title => "スマイレージ 「同じ時給で働く友達の美人ママ」 (MV)",
+                :uri => "https://www.youtube.com/watch?v=gJF6T7iACQg",
+              },
+              {
+                :title => "スマイレージ 「同じ時給で働く友達の美人ママ」 (4Shot Lip Ver.)",
+                :uri => "https://www.youtube.com/watch?v=U4x6fCUyMLA",
+              },
+              {
+                :title => "スマイレージ 「同じ時給で働く友達の美人ママ」 (Close-up Ver.)",
+                :uri => "https://www.youtube.com/watch?v=PWEeuaPqkIk",
+              },
+              {
+                :title => "スマイレージ 「同じ時給で働く友達の美人ママ」 (和田彩花Close-up Ver.)",
+                :uri => "https://www.youtube.com/watch?v=UDa0YTnOsp0",
+              },
+              {
+                :title => "スマイレージ 「同じ時給で働く友達の美人ママ」 (福田花音Close-up Ver.)",
+                :uri => "https://www.youtube.com/watch?v=s-dyYOHEP-4",
+              },
+              {
+                :title => "スマイレージ 「同じ時給で働く友達の美人ママ」 (Dance Shot Ver.Pink)",
+                :uri => "https://www.youtube.com/watch?v=IaJOwWIx7vU",
+              },
+              {
+                :title => "スマイレージ 「同じ時給で働く友達の美人ママ」 (アルバイトVer.)",
+                :uri => "https://www.youtube.com/watch?v=gv-gVn0Jbi8",
+              },
+              {
+                :title => "スマイレージ 「同じ時給で働く友達の美人ママ」 (Dance Shot Ver.Light Blue)",
+                :uri => "https://www.youtube.com/watch?v=0MeXpMw4hjQ",
+              },
+              {
+                :title => "スマイレージ 「同じ時給で働く友達の美人ママ」 (featuring 和田彩花 Ver.)",
+                :uri => "https://www.youtube.com/watch?v=RviN40P0B60",
+              },
+              {
+                :title => "スマイレージ 「同じ時給で働く友達の美人ママ」 (featuring 福田花音 Ver.)",
+                :uri => "https://www.youtube.com/watch?v=tmwpzTmnYw4",
+              },
+            ]
+            @itunes_links = [
+              {
+                :title => "同じ時給で働く友達の美人ママ",
+                :uri => "https://itunes.apple.com/jp/album/id390851470",
+              },
+              {
+                :title => "悪ガキッ①",
+                :uri => "https://itunes.apple.com/jp/album/id403700742",
+              },
+              {
+                :title => "スマイレージ ベストアルバム完全版①",
+                :uri => "https://itunes.apple.com/jp/album/id528168545",
+              },
+            ]
+          end
+        end
+      end
+    end
+  end
+end

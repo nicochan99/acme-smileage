@@ -4,13 +4,17 @@ module Acme
   class Smileage
     class Discography
       class Sales
-        attr_reader :name, :first_sales, :total_sales, :ranking
+        attr_reader :first_week_sales, :total_sales, :peak_rank, :weeks_on_chart
 
-        def initialize(name, first_sales, total_sales, ranking)
-          @name = name
-          @first_sales = first_sales
+        def initialize(first_week_sales, total_sales, peak_rank, weeks_on_chart)
+          @first_week_sales = first_week_sales
           @total_sales = total_sales
-          @ranking = ranking
+          @peak_rank = peak_rank
+          @weeks_on_chart = weeks_on_chart
+        end
+
+        def to_a
+          [self.first_week_sales, self.total_sales, self.peak_rank, self.weeks_on_chart]
         end
       end
     end
