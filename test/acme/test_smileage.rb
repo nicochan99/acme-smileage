@@ -85,4 +85,39 @@ class Acme::TestSmileage < MiniTest::Unit::TestCase
 
     assert_equal 16, s.albums.select {|e| e.single? and e.major? }.length
   end
+
+  def test_find_album
+    s = ::Acme::Smileage.new
+
+    a = s.albums.find {|e| e.name =~ /夢見る/ }
+    assert_equal a, s.find_album("夢15")
+    assert_equal a, s.find_album("夢 15")
+    assert_equal a, s.find_album("夢１５")
+    assert_equal a, s.find_album("夢フィフ")
+
+    a = s.albums.find {|e| e.name =~ /スマイルセンセーション/ }
+    assert_equal a, s.find_album("スマセン")
+    assert_equal a, s.find_album("スマイルセンセーション")
+    assert_equal a, s.find_album("スマイル センセーション")
+  end
+
+  def test_find_track
+    s = ::Acme::Smileage.new
+
+    a = s.tracks.find {|e| e.name =~ /夢見る/ }
+    assert_equal a, s.find_track("夢15")
+    assert_equal a, s.find_track("夢 15")
+    assert_equal a, s.find_track("夢１５")
+    assert_equal a, s.find_track("夢フィフ")
+
+    a = s.tracks.find {|e| e.name =~ /ちょいと/ }
+    assert_equal a, s.find_track("ちょいかわ")
+    assert_equal a, s.find_track("チョイカワ")
+    assert_equal a, s.find_track("裏番長")
+    assert_equal a, s.find_track("ちょいかわ番長")
+    assert_equal a, s.find_track("チョイカワ番長")
+    assert_equal a, s.find_track("私、ちょいとかわいい裏番長")
+    assert_equal a, s.find_track("私、ちょいとカワイイ裏番長")
+    assert_equal a, s.find_track("私、チョイトカワイイ裏番長")
+  end
 end

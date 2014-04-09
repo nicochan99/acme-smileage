@@ -53,20 +53,21 @@ module Acme
       end
 
       def find_track(name)
-        matcher = Matcher.new(name.encode("UTF-8"))
-        canon_name = matcher.match(@tracks.map {|e| [e.name] | e.nicknames }.flatten)
-        raise ArgumentError, "Track not found: #{name}" unless canon_name
-        @tracks.find {|e| e.name == canon_name or e.nicknames.include?(canon_name) }
+        find("Track", name, @tracks)
       end
 
       def find_album(name)
-        matcher = Matcher.new(name.encode("UTF-8"))
-        canon_name = matcher.match(@albums.map {|e| e.name })
-        raise ArgumentError, "Album not found: #{name}" unless canon_name
-        @albums.find {|e| e.name == canon_name }
+        find("Album", name, @albums)
       end
 
       private
+
+      def find(label, name, targets)
+        matcher = Matcher.new(name.encode("UTF-8"))
+        canon_name = matcher.match(targets.map {|e| [e.name] | e.nicknames }.flatten)
+        raise ArgumentError, "#{label} not found: #{name}" unless canon_name
+        targets.find {|e| e.name == canon_name or e.nicknames.include?(canon_name) }
+      end
 
       def album(album_class)
         @albums ||= []
