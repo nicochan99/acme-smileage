@@ -64,4 +64,25 @@ class Acme::TestSmileage < MiniTest::Unit::TestCase
     s = ::Acme::Smileage.new
     assert_equal ["Akari", "Ayaka", "Fuyuka", "Kana", "Kanon", "Meimi", "Rina", "Saki", "Yuuka"], s.sort_by {|e| e.name }.map{|e| e.first_name_en }
   end
+
+  def test_tracks
+    s = ::Acme::Smileage.new
+    assert_equal 65, s.tracks.length
+    assert_equal 9, s.tracks.select {|e| e.cover? }.length
+    assert_equal 7, s.tracks.select {|e| e.remix? }.length
+  end
+
+  def test_albums
+    s = ::Acme::Smileage.new
+
+    assert_equal 28, s.albums.length
+
+    assert_equal 4, s.albums.select {|e| e.indies? }.length
+    assert_equal 24, s.albums.select {|e| e.major? }.length
+
+    assert_equal 3, s.albums.select {|e| e.album? }.length
+    assert_equal 20, s.albums.select {|e| e.single? }.length
+
+    assert_equal 16, s.albums.select {|e| e.single? and e.major? }.length
+  end
 end
