@@ -24,14 +24,6 @@ module Acme
       end
     end
 
-    def select(&block)
-      @members.select(&block)
-    end
-
-    def sort_by(&block)
-      @members.sort_by(&block)
-    end
-
     def albums
       @discography.albums
     end

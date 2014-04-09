@@ -46,23 +46,23 @@ class Acme::TestSmileage < MiniTest::Unit::TestCase
     assert_equal ["Ayaka", "Kanon", "Kana", "Akari", "Rina", "Meimi"], s.members(Date.new(2012, 1, 1)).map{|e| e.first_name_en }
   end
 
-  def test_select
+  def test_member_select
     s = ::Acme::Smileage.new
 
-    assert_equal ["Ayaka", "Yuuka", "Kanon", "Saki"], s.select {|e| e.generation == 1 }.map{|e| e.first_name_en }
-    assert_equal ["Kana", "Fuyuka", "Akari", "Rina", "Meimi"], s.select {|e| e.generation == 2 }.map{|e| e.first_name_en }
-    assert_equal ["Kana", "Akari", "Rina", "Meimi"], s.select {|e| e.generation == 2 && e.active? }.map{|e| e.first_name_en }
+    assert_equal ["Ayaka", "Yuuka", "Kanon", "Saki"], s.members.select {|e| e.generation == 1 }.map{|e| e.first_name_en }
+    assert_equal ["Kana", "Fuyuka", "Akari", "Rina", "Meimi"], s.members.select {|e| e.generation == 2 }.map{|e| e.first_name_en }
+    assert_equal ["Kana", "Akari", "Rina", "Meimi"], s.members.select {|e| e.generation == 2 && e.active? }.map{|e| e.first_name_en }
 
-    assert_equal ["Ayaka", "Meimi"], s.select {|e| e.hometown == "群馬" }.map{|e| e.first_name_en }
-    assert_equal ["Kanon", "Saki", "Akari"], s.select {|e| e.hometown == "埼玉" }.map{|e| e.first_name_en }
+    assert_equal ["Ayaka", "Meimi"], s.members.select {|e| e.hometown == "群馬" }.map{|e| e.first_name_en }
+    assert_equal ["Kanon", "Saki", "Akari"], s.members.select {|e| e.hometown == "埼玉" }.map{|e| e.first_name_en }
 
-    assert_equal ["Ayaka", "Kanon", "Saki", "Kana", "Rina"], s.select {|e| e.blood_type == "A" }.map{|e| e.first_name_en }
-    assert_equal ["Yuuka"], s.select {|e| e.blood_type == "B" }.map{|e| e.first_name_en }
+    assert_equal ["Ayaka", "Kanon", "Saki", "Kana", "Rina"], s.members.select {|e| e.blood_type == "A" }.map{|e| e.first_name_en }
+    assert_equal ["Yuuka"], s.members.select {|e| e.blood_type == "B" }.map{|e| e.first_name_en }
   end
 
-  def test_sort_by
+  def test_member_sort_by
     s = ::Acme::Smileage.new
-    assert_equal ["Akari", "Ayaka", "Fuyuka", "Kana", "Kanon", "Meimi", "Rina", "Saki", "Yuuka"], s.sort_by {|e| e.name }.map{|e| e.first_name_en }
+    assert_equal ["Akari", "Ayaka", "Fuyuka", "Kana", "Kanon", "Meimi", "Rina", "Saki", "Yuuka"], s.members.sort_by {|e| e.name }.map{|e| e.first_name_en }
   end
 
   def test_tracks

@@ -7,7 +7,7 @@ require "minitest_helper"
 class Acme::TestMember < MiniTest::Unit::TestCase
   def test_member_all
     s = ::Acme::Smileage.new
-    rp = s.select {|e| e.name =~ /Rina/ }.first
+    rp = s.members.select {|e| e.name =~ /Rina/ }.first
 
     assert_equal "勝田", rp.family_name_ja
     assert_equal "里奈", rp.first_name_ja
