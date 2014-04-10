@@ -26,6 +26,8 @@ module Acme
               },
             ]
           end
+
+          def remix?; true; end
         end
       end
     end

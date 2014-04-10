@@ -69,7 +69,7 @@ class Acme::TestSmileage < MiniTest::Unit::TestCase
     s = ::Acme::Smileage.new
     assert_equal 65, s.tracks.length
     assert_equal 9, s.tracks.select {|e| e.cover? }.length
-    assert_equal 7, s.tracks.select {|e| e.remix? }.length
+    assert_equal 8, s.tracks.select {|e| e.remix? }.length
   end
 
   def test_albums
