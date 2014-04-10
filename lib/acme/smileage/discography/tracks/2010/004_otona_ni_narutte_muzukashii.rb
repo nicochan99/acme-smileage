@@ -18,7 +18,20 @@ module Acme
               :utamap => "http://www.utamap.com/showkasi.php?surl=dk100527_6",
               :utanet => "http://www.uta-net.com/song/91873/",
             }
-            @youtube_links = []
+            @youtube_links = [
+              {
+                :title => "スマイレージ 「オトナになるって難しい！！！」 (MV)",
+                :uri => "https://www.youtube.com/watch?v=LNpIGK_klbA",
+              },
+              {
+                :title => "スマイレージ 「オトナになるって難しい！！！」 (Dance Shot Ver.)",
+                :uri => "https://www.youtube.com/watch?v=-WaavRLtAqI",
+              },
+              {
+                :title => "スマイレージ 「オトナになるって難しい！！！」 (Close-up Ver.)",
+                :uri => "https://www.youtube.com/watch?v=_gs6j31SGbw",
+              },
+            ]
             @itunes_links = [
               {
                 :title => "オトナになるって難しい！！！",

@@ -24,12 +24,7 @@ module Acme
                 :uri => "https://www.youtube.com/watch?v=fAPI8PW2q-A",
               },
             ]
-            @itunes_links = [
-              {
-                :title => "ミステリーナイト!/エイティーン エモーション",
-                :uri => "",
-              },
-            ]
+            @itunes_links = []
           end
         end
       end

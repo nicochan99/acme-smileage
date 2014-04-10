@@ -18,7 +18,48 @@ module Acme
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-100728-116",
               :utanet => "http://www.uta-net.com/song/98771/",
             }
-            @youtube_links = []
+            @youtube_links = [
+              {
+                :title => "スマイレージ 「○○ がんばらなくてもええねんで！！」 (MV)",
+                :uri => "https://www.youtube.com/watch?v=2V1Z5vFv8JM",
+              },
+              {
+                :title => "スマイレージ 「○○ がんばらなくてもええねんで！！」 (福田Close-up Ver.)",
+                :uri => "https://www.youtube.com/watch?v=5Ua93ZMtvUI",
+              },
+              {
+                :title => "スマイレージ 「○○ がんばらなくてもええねんで！！」 (和田Close-up Ver.)",
+                :uri => "https://www.youtube.com/watch?v=111MEXCdgXQ",
+              },
+              {
+                :title => "スマイレージ 「○○ がんばらなくてもええねんで！！」 (featuring　和田)",
+                :uri => "https://www.youtube.com/watch?v=lk6qPmbuelA",
+              },
+              {
+                :title => "スマイレージ 「○○ がんばらなくてもええねんで！！」 (featuring　福田)",
+                :uri => "https://www.youtube.com/watch?v=FXXZdGCa9Ok",
+              },
+              {
+                :title => "スマイレージ 「○○ がんばらなくてもええねんで！！」 (Another Ver.)",
+                :uri => "https://www.youtube.com/watch?v=iSsgx89cgSk",
+              },
+              {
+                :title => "スマイレージ 「○○ がんばらなくてもええねんで！！」 (Close-up Ver.)",
+                :uri => "https://www.youtube.com/watch?v=76r-hX6y7eI",
+              },
+              {
+                :title => "スマイレージ 「○○ がんばらなくてもええねんで！！」 (Dance Shot Ver.Black)",
+                :uri => "https://www.youtube.com/watch?v=EQD0w9S8gJI",
+              },
+              {
+                :title => "スマイレージ 「○○ がんばらなくてもええねんで！！」 (Dance Shot Ver.White)",
+                :uri => "https://www.youtube.com/watch?v=ErqUnGS5RcA",
+              },
+              {
+                :title => "スマイレージ 「○○ がんばらなくてもええねんで！！」 (Another Ver.)",
+                :uri => "https://www.youtube.com/watch?v=-MrBYK0bdC8",
+              },
+            ]
             @itunes_links = [
               {
                 :title => "○○ がんばらなくてもええねんで！！",

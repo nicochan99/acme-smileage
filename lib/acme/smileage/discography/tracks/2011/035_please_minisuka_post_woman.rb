@@ -18,7 +18,12 @@ module Acme
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-111228-031",
               :utanet => "http://www.uta-net.com/song/123904/",
             }
-            @youtube_links = []
+            @youtube_links = [
+              {
+                :title => "スマイレージ 『プリーズ ミニスカ ポストウーマン！』 (MV）",
+                :uri => "https://www.youtube.com/watch?v=EOUi6tndJT0",
+              },
+            ]
             @itunes_links = [
               {
                 :title => "プリーズ ミニスカ ポストウーマン！",

@@ -18,7 +18,16 @@ module Acme
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-100728-117",
               :utanet => "http://www.uta-net.com/song/98770/",
             }
-            @youtube_links = []
+            @youtube_links = [
+              {
+                :title => "スマイレージ 「○○ がんばらなくてもいいんだよ！！」 (MV)",
+                :uri => "https://www.youtube.com/watch?v=FAHiyJj_1w4",
+              },
+              {
+                :title => "スマイレージ 「○○ がんばらなくてもいいんだよ！！」 (Close-up Ver.)",
+                :uri => "https://www.youtube.com/watch?v=QtWKqgKE-jU",
+              },
+            ]
             @itunes_links = [
               {
                 :title => "○○ がんばらなくてもええねんで！！",

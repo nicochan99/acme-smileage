@@ -18,7 +18,12 @@ module Acme
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-120201-012",
               :utanet => "http://www.uta-net.com/song/125050/",
             }
-            @youtube_links = []
+            @youtube_links = [
+              {
+                :title => "スマイレージ 『チョトマテクダサイ！』 (MV)",
+                :uri => "https://www.youtube.com/watch?v=OVwsVKzgR_Y",
+              },
+            ]
             @itunes_links = [
               {
                 :title => "チョトマテクダサイ！",

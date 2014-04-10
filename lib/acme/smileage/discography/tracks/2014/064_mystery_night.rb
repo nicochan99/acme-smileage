@@ -18,13 +18,13 @@ module Acme
               :utamap => "",
               :utanet => "",
             }
-            @youtube_links = []
-            @itunes_links = [
+            @youtube_links = [
               {
-                :title => "ミステリーナイト!/エイティーン エモーション",
-                :uri => "",
+                :title => "スマイレージ 『ミステリーナイト！』 (S/mileage[A Mistery Night!]) (Promotion edit)",
+                :uri => "https://www.youtube.com/watch?v=gh6-f1EV_14",
               },
             ]
+            @itunes_links = []
           end
         end
       end
