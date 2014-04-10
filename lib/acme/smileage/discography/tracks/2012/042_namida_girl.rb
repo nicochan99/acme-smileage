@@ -21,7 +21,7 @@ module Acme
             @youtube_links = []
             @itunes_links = [
               {
-                :title => "チョトマテクダサイ!",
+                :title => "チョトマテクダサイ！",
                 :uri => "https://itunes.apple.com/jp/album/id496149549",
               },
             ]

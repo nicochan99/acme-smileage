@@ -11,7 +11,7 @@ module Acme
 
           def initialize
             super
-            @name = "○○ がんばらなくてもええねんで!! (TopNude Remix Version 01)"
+            @name = "○○ がんばらなくてもええねんで！！ (TopNude Remix Version 01)"
             @nicknames = []
             @arranger = "高橋諭一"
             @lyric_links = {
@@ -21,7 +21,7 @@ module Acme
             @youtube_links = []
             @itunes_links = [
               {
-                :title => "○○ がんばらなくてもええねんで!! (TopNude Remix Version 01)",
+                :title => "○○ がんばらなくてもええねんで！！ (TopNude Remix Version 01)",
                 :uri => "https://itunes.apple.com/jp/album/id385082027",
               },
             ]

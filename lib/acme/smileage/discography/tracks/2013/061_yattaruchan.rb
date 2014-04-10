@@ -30,7 +30,7 @@ module Acme
             ]
             @itunes_links = [
               {
-                :title => "新しい私になれ!/ヤッタルチャン",
+                :title => "新しい私になれ！／ヤッタルチャン",
                 :uri => "https://itunes.apple.com/jp/album/id663131682",
               },
             ]

@@ -21,7 +21,7 @@ module Acme
             @youtube_links = []
             @itunes_links = [
               {
-                :title => "プリーズ ミニスカ ポストウーマン!",
+                :title => "プリーズ ミニスカ ポストウーマン！",
                 :uri => "https://itunes.apple.com/jp/album/idid487501137",
               },
             ]

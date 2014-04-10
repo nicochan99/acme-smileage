@@ -17,11 +17,11 @@ module Acme
             @discography_link = "http://s-mileage.jp/discography/detail_00047/"
             @image_links = [
               {
-                :title => "「悪ガキッ①」 【通常盤】",
+                :title => "悪ガキッ① 【通常盤】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/047/101118-1624_01l.jpg",
               },
               {
-                :title => "「悪ガキッ①」 【初回生産限定盤】",
+                :title => "悪ガキッ① 【初回生産限定盤】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/047/101118-1624_02l.jpg",
               },
             ]

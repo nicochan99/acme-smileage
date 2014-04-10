@@ -11,7 +11,7 @@ module Acme
 
           def initialize
             super
-            @name = "チャンス到来!"
+            @name = "チャンス到来！"
             @nicknames = []
             @arranger = "板垣祐介"
             @lyric_links = {
@@ -21,7 +21,7 @@ module Acme
             @youtube_links = []
             @itunes_links = [
               {
-                :title => "チョトマテクダサイ!",
+                :title => "チョトマテクダサイ！",
                 :uri => "https://itunes.apple.com/jp/album/id496149565",
               },
             ]

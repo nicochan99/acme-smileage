@@ -10,26 +10,26 @@ module Acme
           include Singleton
 
           def initialize
-            @name = "○○ がんばらなくてもええねんで!!"
+            @name = "○○ がんばらなくてもええねんで！！"
             @nicknames = ["がんばら"]
             @release_date = Date.new(2010, 7, 28)
             @oricon = Sales.new(18987, 24489, 6, 4)
             @discography_link = "http://s-mileage.jp/discography/detail_00021/"
             @image_links = [
               {
-                :title => "「○○ がんばらなくてもええねんで!!」 通常盤",
+                :title => "○○ がんばらなくてもええねんで！！ 【通常盤】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_01l.jpg",
               },
               {
-                :title => "「○○ がんばらなくてもええねんで!!」 初回生産限定盤A",
+                :title => "○○ がんばらなくてもええねんで！！ 【初回生産限定盤A】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_02l.jpg",
               },
               {
-                :title => "「○○ がんばらなくてもええねんで!!」 初回生産限定盤B",
+                :title => "○○ がんばらなくてもええねんで！！ 【初回生産限定盤B】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_03l.jpg",
               },
               {
-                :title => "「○○ がんばらなくてもええねんで!!」 初回生産限定盤C",
+                :title => "○○ がんばらなくてもええねんで！！ 【初回生産限定盤C】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_04l.jpg",
               },
             ]

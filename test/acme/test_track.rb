@@ -9,7 +9,7 @@ class Acme::TestTrack < MiniTest::Unit::TestCase
     s = ::Acme::Smileage.new
 
     a = s.tracks.find {|e| e.name =~ /クレームブリュレ/ }
-    assert_equal "サンキュ! クレームブリュレの友情", a.name
+    assert_equal "サンキュ！ クレームブリュレの友情", a.name
     assert_equal ["クレームブリュレ"], a.nicknames
     assert_equal "亜伊林", a.lyric
     assert_equal "つんく♂", a.composer

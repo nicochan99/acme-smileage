@@ -11,7 +11,7 @@ module Acme
 
           def initialize
             super
-            @name = "サンキュ! クレームブリュレの友情"
+            @name = "サンキュ！ クレームブリュレの友情"
             @lyric = "亜伊林"
             @nicknames = ["クレームブリュレ"]
             @arranger = "高橋諭一"
