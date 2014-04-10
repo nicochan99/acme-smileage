@@ -14,6 +14,10 @@ module Acme
             @name = "自転車チリリン"
             @nicknames = ["チリリン"]
             @arranger = "藤澤慶昌"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-110810-161",
+              :utanet => "http://www.uta-net.com/song/116847/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

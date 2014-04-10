@@ -14,6 +14,10 @@ module Acme
             @name = "乙女パスタに感動"
             @nicknames = ["乙パス"]
             @arranger = "板垣祐介"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-110209-013",
+              :utanet => "http://www.uta-net.com/song/108523/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

@@ -14,6 +14,10 @@ module Acme
             @name = "恋人は心の応援団"
             @nicknames = []
             @arranger = "板垣祐介"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-120502-083",
+              :utanet => "http://www.uta-net.com/song/129100/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

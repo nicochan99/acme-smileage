@@ -14,6 +14,10 @@ module Acme
             @name = "女ばかりの日曜日"
             @nicknames = []
             @arranger = "鈴木俊介"
+            @lyric_links = {
+              :utamap => "",
+              :utanet => "http://www.uta-net.com/song/105948/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

@@ -14,6 +14,10 @@ module Acme
             @name = "ドットビキニ"
             @nicknames = []
             @arranger = "大久保薫"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-120502-081",
+              :utanet => "http://www.uta-net.com/song/129102/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 『ドットビキニ』 (MV)",

@@ -14,6 +14,10 @@ module Acme
             @name = "タチアガール"
             @nicknames = []
             @arranger = "平田祥一郎"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-110928-016",
+              :utanet => "http://www.uta-net.com/song/119200/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 『タチアガール』 (MV)",

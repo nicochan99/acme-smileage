@@ -14,6 +14,10 @@ module Acme
             @name = "ちょこっとLOVE"
             @nicknames = ["ちょこラブ", "ちょこLOVE"]
             @arranger = "鈴木俊介"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-100929-011",
+              :utanet => "http://www.uta-net.com/song/102018/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

@@ -14,6 +14,10 @@ module Acme
             @name = "しっかりしてよ!もう"
             @nicknames = []
             @arranger = "宅見将典"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-101208-049",
+              :utanet => "http://www.uta-net.com/song/105944/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

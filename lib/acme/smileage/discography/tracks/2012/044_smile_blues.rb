@@ -14,6 +14,10 @@ module Acme
             @name = "すまいるブルース/須磨入姉妹"
             @nicknames = []
             @arranger = "高橋諭一"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-120502-082",
+              :utanet => "http://www.uta-net.com/song/129101/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

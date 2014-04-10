@@ -14,6 +14,10 @@ module Acme
             @name = "天真爛漫"
             @nicknames = []
             @arranger = "大久保薫"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-130522-191",
+              :utanet => "http://www.uta-net.com/song/146546/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

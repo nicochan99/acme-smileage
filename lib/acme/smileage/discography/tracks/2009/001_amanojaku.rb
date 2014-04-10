@@ -14,6 +14,10 @@ module Acme
             @name = "ぁまのじゃく"
             @nicknames = []
             @arranger = "藤澤慶昌"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-101208-051",
+              :utanet => "http://www.uta-net.com/song/87905/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 「ぁまのじゃく」 (MV) ",

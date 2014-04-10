@@ -14,6 +14,10 @@ module Acme
             @name = "黄色い自転車とサンドウィッチ"
             @nicknames = ["黄色い自転車"]
             @arranger = "オオバコウスケ"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-120530-121",
+              :utanet => "http://www.uta-net.com/song/131208/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

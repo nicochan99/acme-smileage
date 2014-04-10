@@ -14,6 +14,10 @@ module Acme
             @name = "こんにちは こんばんは"
             @nicknames = ["こんこん"]
             @arranger = "板垣祐介"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-111228-032",
+              :utanet => "http://www.uta-net.com/song/123996/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

@@ -14,6 +14,10 @@ module Acme
             @name = "チャンス到来!"
             @nicknames = []
             @arranger = "板垣祐介"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-120201-013",
+              :utanet => "http://www.uta-net.com/song/126048/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

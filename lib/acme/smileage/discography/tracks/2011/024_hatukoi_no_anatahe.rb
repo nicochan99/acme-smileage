@@ -14,6 +14,10 @@ module Acme
             @name = "初恋の貴方へ"
             @nicknames = []
             @arranger = "板垣祐介"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-110427-199",
+              :utanet => "http://www.uta-net.com/song/140550/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

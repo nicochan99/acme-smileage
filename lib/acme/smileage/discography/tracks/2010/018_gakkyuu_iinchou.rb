@@ -14,6 +14,10 @@ module Acme
             @name = "学級委員長"
             @nicknames = []
             @arranger = "鈴木Daichi秀行"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-101208-048",
+              :utanet => "http://www.uta-net.com/song/105945/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

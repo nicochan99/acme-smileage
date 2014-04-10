@@ -14,6 +14,10 @@ module Acme
             @name = "シューティング スター"
             @nicknames = []
             @arranger = "湯浅公一"
+            @lyric_links = {
+              :utamap => "",
+              :utanet => "http://www.uta-net.com/song/105947/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

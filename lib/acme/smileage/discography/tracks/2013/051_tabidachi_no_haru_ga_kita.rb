@@ -14,6 +14,10 @@ module Acme
             @name = "旅立ちの春が来た"
             @nicknames = ["旅春"]
             @arranger = "大久保薫"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-130320-046",
+              :utanet => "http://www.uta-net.com/song/143842/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 「旅立ちの春が来た」 (MV)",

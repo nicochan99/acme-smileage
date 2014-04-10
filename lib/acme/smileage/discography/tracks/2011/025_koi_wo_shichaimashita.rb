@@ -14,6 +14,10 @@ module Acme
             @name = "恋をしちゃいました!"
             @nicknames = []
             @arranger = "平田祥一郎"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-110427-200",
+              :utanet => "http://www.uta-net.com/song/112182/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

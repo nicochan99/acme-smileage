@@ -14,6 +14,10 @@ module Acme
             @name = "あすはデートなのに、今すぐ声が聞きたい"
             @nicknames = ["あすデー"]
             @arranger = "AKIRA"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-101208-050",
+              :utanet => "http://www.uta-net.com/song/105943/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 「あすはデートなのに、今すぐ声が聞きたい」 (MV)",

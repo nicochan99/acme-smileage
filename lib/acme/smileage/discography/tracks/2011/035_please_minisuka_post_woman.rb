@@ -14,6 +14,10 @@ module Acme
             @name = "プリーズ ミニスカ ポストウーマン!"
             @nicknames = ["PMPW"]
             @arranger = "大久保薫"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-111228-031",
+              :utanet => "http://www.uta-net.com/song/123904/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

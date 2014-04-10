@@ -14,6 +14,10 @@ module Acme
             @name = "ミステリーナイト!"
             @nicknames = ["ミスナイ"]
             @arranger = ""
+            @lyric_links = {
+              :utamap => "",
+              :utanet => "",
+            }
             @youtube_links = []
             @itunes_links = [
               {

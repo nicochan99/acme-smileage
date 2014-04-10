@@ -14,6 +14,10 @@ module Acme
             @name = "パン屋さんのアルバイト"
             @nicknames = ["パン屋"]
             @arranger = "鈴木俊介"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-110209-012",
+              :utanet => "http://www.uta-net.com/song/140549/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

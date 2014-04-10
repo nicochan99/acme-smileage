@@ -14,6 +14,7 @@ module Acme
             @name = "スマイレージ シングルス 激萌えリミックス"
             @nicknames = []
             @arranger = "田中直"
+            @lyric_links = {}
             @youtube_links = []
             @itunes_links = [
               {

@@ -14,6 +14,10 @@ module Acme
             @name = "スマイル美人"
             @nicknames = []
             @arranger = "平田祥一郎"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-100728-118",
+              :utanet => "http://www.uta-net.com/song/98769/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

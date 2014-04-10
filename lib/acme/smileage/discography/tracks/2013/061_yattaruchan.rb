@@ -14,6 +14,10 @@ module Acme
             @name = "ヤッタルチャン"
             @nicknames = ["ヤッタル"]
             @arranger = "大久保薫"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-130703-251",
+              :utanet => "http://www.uta-net.com/song/148899/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 『ヤッタルチャン』(S/mileage[Yattaruchan]) (MV)",

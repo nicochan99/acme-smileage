@@ -14,6 +14,10 @@ module Acme
             @name = "踊ろうよ"
             @nicknames = []
             @arranger = "藤澤慶昌"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-101208-046",
+              :utanet => "http://www.uta-net.com/song/105949/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

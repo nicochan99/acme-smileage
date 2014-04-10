@@ -14,6 +14,10 @@ module Acme
             @name = "エイティーン エモーション"
             @nicknames = ["エイエモ", "18エモ"]
             @arranger = ""
+            @lyric_links = {
+              :utamap => "",
+              :utanet => "",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ『エイティーン エモーション』 (S/mileage[Eighteen Emotion]) (Promotion edit)",

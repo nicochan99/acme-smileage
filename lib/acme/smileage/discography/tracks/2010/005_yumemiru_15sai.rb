@@ -14,6 +14,10 @@ module Acme
             @name = "夢見る 15歳"
             @nicknames = ["夢フィフ", "夢15"]
             @arranger = "平田祥一郎"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-100526-018",
+              :utanet => "http://www.uta-net.com/song/95255/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 「夢見る 15歳」 (Another Ver.)",

@@ -15,6 +15,10 @@ module Acme
             @lyric = "亜伊林"
             @nicknames = ["クレームブリュレ"]
             @arranger = "高橋諭一"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-100526-019",
+              :utanet => "http://www.uta-net.com/song/95254/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

@@ -14,6 +14,10 @@ module Acme
             @name = "有頂天LOVE"
             @nicknames = ["有頂天"]
             @arranger = "大久保薫"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-110810-160",
+              :utanet => "http://www.uta-net.com/song/116848/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 『有頂天LOVE』 (Music only)",

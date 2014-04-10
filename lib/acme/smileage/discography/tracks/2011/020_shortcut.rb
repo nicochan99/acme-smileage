@@ -14,6 +14,10 @@ module Acme
             @name = "ショートカット"
             @nicknames = []
             @arranger = "平田祥一郎"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-110209-011",
+              :utanet => "http://www.uta-net.com/song/108524/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 「ショートカット」 (MV)",

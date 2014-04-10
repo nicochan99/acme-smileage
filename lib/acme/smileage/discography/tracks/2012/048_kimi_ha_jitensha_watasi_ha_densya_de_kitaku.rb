@@ -14,6 +14,10 @@ module Acme
             @name = "君は自転車 私は電車で帰宅"
             @nicknames = ["君チャリ"]
             @arranger = "山崎淳"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-120822-026",
+              :utanet => "http://www.uta-net.com/song/134033/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

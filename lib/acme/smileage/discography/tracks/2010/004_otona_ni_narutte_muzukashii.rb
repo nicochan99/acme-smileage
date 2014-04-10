@@ -14,6 +14,10 @@ module Acme
             @name = "オトナになるって難しい!!!"
             @nicknames = ["オトムズ", "オトむず"]
             @arranger = "板垣祐介"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=dk100527_6",
+              :utanet => "http://www.uta-net.com/song/91873/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

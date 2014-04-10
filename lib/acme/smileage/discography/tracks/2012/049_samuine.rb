@@ -14,6 +14,10 @@ module Acme
             @name = "寒いね。"
             @nicknames = []
             @arranger = "大久保薫"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-121128-150",
+              :utanet => "http://www.uta-net.com/song/138712/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 「寒いね。」 (MV)",

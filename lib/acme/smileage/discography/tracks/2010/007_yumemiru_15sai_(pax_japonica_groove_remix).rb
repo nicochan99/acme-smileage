@@ -14,6 +14,10 @@ module Acme
             @name = "夢見る 15歳 (PAX JAPONICA GROOVE REMIX)"
             @nicknames = []
             @arranger = "平田祥一郎"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-100526-018",
+              :utanet => "http://www.uta-net.com/song/95255/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

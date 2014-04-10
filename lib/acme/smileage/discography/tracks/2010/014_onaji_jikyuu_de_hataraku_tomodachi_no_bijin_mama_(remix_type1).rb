@@ -14,6 +14,10 @@ module Acme
             @name = "同じ時給で働く友達の美人ママ (Remix Type1)"
             @nicknames = []
             @arranger = "山崎淳"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-100929-010",
+              :utanet => "http://www.uta-net.com/song/102019/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

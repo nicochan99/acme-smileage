@@ -14,6 +14,10 @@ module Acme
             @name = "ええか!?"
             @nicknames = []
             @arranger = "近藤圭一"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-131218-069",
+              :utanet => "http://www.uta-net.com/song/157051/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 『ええか！？』 (S/mileage[Do you get it?]) (MV)",

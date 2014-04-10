@@ -14,6 +14,10 @@ module Acme
             @name = "○○ がんばらなくてもいいんだよ!!"
             @nicknames = []
             @arranger = "高橋諭一"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-100728-117",
+              :utanet => "http://www.uta-net.com/song/98770/",
+            }
             @youtube_links = []
             @itunes_links = [
               {

@@ -14,6 +14,10 @@ module Acme
             @name = "スキちゃん"
             @nicknames = []
             @arranger = "板垣祐介"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-101208-047",
+              :utanet => "http://www.uta-net.com/song/105946/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 「スキちゃん」 (MV)",

@@ -14,6 +14,10 @@ module Acme
             @name = "「良い奴」"
             @nicknames = []
             @arranger = "大久保薫"
+            @lyric_links = {
+              :utamap => "http://www.utamap.com/showkasi.php?surl=k-131218-070",
+              :utanet => "http://www.uta-net.com/song/157050/",
+            }
             @youtube_links = [
               {
                 :title => "スマイレージ 『「良い奴」』(S/mileage[Nice Guy]) (MV)",
