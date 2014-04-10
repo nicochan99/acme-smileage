@@ -15,7 +15,7 @@ module Acme
             @release_date = Date.new(2012, 8, 22)
             @oricon = Sales.new(22866, 24508, 7, 3)
             @discography_link = "http://s-mileage.jp/discography/detail_00116/"
-            @image_links = [
+            @artwork_links = [
               {
                 :title => "好きよ、純情反抗期。 【通常盤】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/116/120730-1512_01l.jpg",

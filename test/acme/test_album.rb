@@ -13,7 +13,7 @@ class Acme::TestAlbum < MiniTest::Unit::TestCase
     assert_equal Date.new(2010, 5, 26), a.release_date
     assert_equal [20438, 24936, 5, 4], a.oricon.to_a
 
-    image_links = [
+    artwork_links = [
       {
         :title => "夢見る 15歳 【通常盤】",
         :uri => "http://s-mileage.jp/discography/obj/img/000/009/100517-1512_01l.jpg",
@@ -27,7 +27,7 @@ class Acme::TestAlbum < MiniTest::Unit::TestCase
         :uri => "http://s-mileage.jp/discography/obj/img/000/009/100517-1512_03l.jpg",
       },
     ]
-    assert_equal image_links, a.image_links
+    assert_equal artwork_links, a.artwork_links
 
     tracks = []
     tracks << Acme::Smileage::Discography::Tracks::Yumemiru15sai.instance
@@ -50,13 +50,13 @@ class Acme::TestAlbum < MiniTest::Unit::TestCase
     assert_equal "ぁまのじゃく", a.name
     assert_equal Date.new(2009, 6, 7), a.release_date
     assert_equal [0, 0, 0, 0], a.oricon.to_a
-    image_links = [
+    artwork_links = [
       {
         :title => "ぁまのじゃく",
         :uri => "http://s-mileage.jp/discography/obj/img/000/012/100922-1209_01l.jpg",
       },
     ]
-    assert_equal image_links, a.image_links
+    assert_equal artwork_links, a.artwork_links
 
     tracks = []
     tracks << Acme::Smileage::Discography::Tracks::Amanojaku.instance
@@ -77,13 +77,13 @@ class Acme::TestAlbum < MiniTest::Unit::TestCase
     a = s.albums.find {|e| e.name =~ /PAX JAPONICA/ }
     assert_equal "夢見る 15歳 (PAX JAPONICA GROOVE REMIX)", a.name
     assert_equal Date.new(2010, 6, 18), a.release_date
-    image_links = [
+    artwork_links = [
       {
         :title => "夢見る 15歳 (PAX JAPONICA GROOVE REMIX)",
         :uri => "http://s-mileage.jp/discography/obj/img/000/032/100709-1334_01l.jpg",
       },
     ]
-    assert_equal image_links, a.image_links
+    assert_equal artwork_links, a.artwork_links
 
     tracks = []
     tracks << Acme::Smileage::Discography::Tracks::Yumemiru15saiPaxJaponicaGrooveRemix.instance
@@ -106,7 +106,7 @@ class Acme::TestAlbum < MiniTest::Unit::TestCase
     assert_equal Date.new(2010, 12, 8), a.release_date
     assert_equal [8905, 11848, 18, 5], a.oricon.to_a
 
-    image_links = [
+    artwork_links = [
       {
         :title => "悪ガキッ① 【通常盤】",
         :uri => "http://s-mileage.jp/discography/obj/img/000/047/101118-1624_01l.jpg",
@@ -116,7 +116,7 @@ class Acme::TestAlbum < MiniTest::Unit::TestCase
         :uri => "http://s-mileage.jp/discography/obj/img/000/047/101118-1624_02l.jpg",
       },
     ]
-    assert_equal image_links, a.image_links
+    assert_equal artwork_links, a.artwork_links
 
     tracks = []
     tracks << Acme::Smileage::Discography::Tracks::OnajiJikyuuDeHatarakuTomodachiNoBijinMama.instance
@@ -150,7 +150,7 @@ class Acme::TestAlbum < MiniTest::Unit::TestCase
     assert_equal [], a.nicknames
     assert_equal Date.new(2012, 5, 30), a.release_date
     assert_equal [6339, 8095, 13, 3], a.oricon.to_a
-    image_links = [
+    artwork_links = [
       {
         :title => "スマイレージ ベストアルバム完全版① 【通常盤】",
         :uri => "http://s-mileage.jp/discography/obj/img/000/114/120502-2111_01l.jpg",
@@ -160,7 +160,7 @@ class Acme::TestAlbum < MiniTest::Unit::TestCase
         :uri => "http://s-mileage.jp/discography/obj/img/000/114/120502-2111_02l.jpg",
       },
     ]
-    assert_equal image_links, a.image_links
+    assert_equal artwork_links, a.artwork_links
 
     tracks = []
     tracks << Acme::Smileage::Discography::Tracks::Dotbikini.instance

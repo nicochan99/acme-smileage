@@ -14,7 +14,7 @@ module Acme
             @nicknames = []
             @release_date = Date.new(2010, 6, 18)
             @discography_link = "http://s-mileage.jp/discography/detail_00032/"
-            @image_links = [
+            @artwork_links = [
               {
                 :title => "夢見る 15歳 (PAX JAPONICA GROOVE REMIX)",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/032/100709-1334_01l.jpg",

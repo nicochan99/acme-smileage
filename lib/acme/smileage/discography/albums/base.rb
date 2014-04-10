@@ -8,7 +8,7 @@ module Acme
     class Discography
       module Albums
         class Base
-          attr_reader :name, :nicknames, :release_date, :image_links, :discography_link
+          attr_reader :name, :nicknames, :release_date, :artwork_links, :discography_link
           attr_reader :oricon
           attr_reader :tracks
 

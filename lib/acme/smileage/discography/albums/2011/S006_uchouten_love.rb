@@ -15,7 +15,7 @@ module Acme
             @release_date = Date.new(2011, 8, 3)
             @oricon = Sales.new(29328, 33823, 5, 4)
             @discography_link = "http://s-mileage.jp/discography/detail_00076/"
-            @image_links = [
+            @artwork_links = [
               {
                 :title => "有頂天LOVE 【通常盤】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/076/110708-1520_01l.jpg",

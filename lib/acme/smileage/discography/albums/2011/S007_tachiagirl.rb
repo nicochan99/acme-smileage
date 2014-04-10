@@ -15,7 +15,7 @@ module Acme
             @release_date = Date.new(2011, 9, 28)
             @oricon = Sales.new(22792, 26328, 4, 4)
             @discography_link = "http://s-mileage.jp/discography/detail_00080/"
-            @image_links = [
+            @artwork_links = [
               {
                 :title => "タチアガール 【通常盤】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_01l.jpg",

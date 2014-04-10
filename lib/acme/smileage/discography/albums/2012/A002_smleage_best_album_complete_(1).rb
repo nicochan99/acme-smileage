@@ -15,7 +15,7 @@ module Acme
             @release_date = Date.new(2012, 5, 30)
             @oricon = Sales.new(6339, 8095, 13, 3)
             @discography_link = "http://s-mileage.jp/discography/detail_00114/"
-            @image_links = [
+            @artwork_links = [
               {
                 :title => "スマイレージ ベストアルバム完全版① 【通常盤】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/114/120502-2111_01l.jpg",

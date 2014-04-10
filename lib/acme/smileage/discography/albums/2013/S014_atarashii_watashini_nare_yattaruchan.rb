@@ -15,7 +15,7 @@ module Acme
             @release_date = Date.new(2013, 7, 3)
             @oricon = Sales.new(26573, 27935, 4, 3)
             @discography_link = "http://s-mileage.jp/discography/detail_00149/"
-            @image_links = [
+            @artwork_links = [
               {
                 :title => "新しい私になれ！／ヤッタルチャン 【通常盤】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/149/130613-1235_01l.jpg",

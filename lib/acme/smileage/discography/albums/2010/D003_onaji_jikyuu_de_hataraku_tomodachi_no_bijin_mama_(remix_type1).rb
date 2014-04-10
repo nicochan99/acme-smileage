@@ -14,7 +14,7 @@ module Acme
             @nicknames = []
             @release_date = Date.new(2010, 11, 3)
             @discography_link = "http://s-mileage.jp/discography/detail_00051/"
-            @image_links = [
+            @artwork_links = [
               {
                 :title => "同じ時給で働く友達の美人ママ (Remix Type1)",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/051/101122-1155_01l.jpg",

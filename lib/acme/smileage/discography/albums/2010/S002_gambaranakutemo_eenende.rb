@@ -15,7 +15,7 @@ module Acme
             @release_date = Date.new(2010, 7, 28)
             @oricon = Sales.new(18987, 24489, 6, 4)
             @discography_link = "http://s-mileage.jp/discography/detail_00021/"
-            @image_links = [
+            @artwork_links = [
               {
                 :title => "○○ がんばらなくてもええねんで！！ 【通常盤】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_01l.jpg",

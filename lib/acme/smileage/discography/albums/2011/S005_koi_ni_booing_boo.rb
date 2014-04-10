@@ -15,7 +15,7 @@ module Acme
             @release_date = Date.new(2011, 4, 27)
             @oricon = Sales.new(19049, 20954, 6, 3)
             @discography_link = "http://s-mileage.jp/discography/detail_00068/"
-            @image_links = [
+            @artwork_links = [
               {
                 :title => "恋にBooing ブー！ 【通常盤】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/068/110331-2058_01l.jpg",

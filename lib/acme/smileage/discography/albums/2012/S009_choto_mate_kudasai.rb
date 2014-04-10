@@ -15,7 +15,7 @@ module Acme
             @release_date = Date.new(2012, 2, 1)
             @oricon = Sales.new(19700, 22106, 6, 3)
             @discography_link = "http://s-mileage.jp/discography/detail_00101/"
-            @image_links = [
+            @artwork_links = [
               {
                 :title => "チョトマテクダサイ！ 【通常盤】",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/101/120111-1343_01l.jpg",

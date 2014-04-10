@@ -15,7 +15,7 @@ module Acme
             @release_date = Date.new(2009, 9, 23)
             @oricon = Sales.new(0, 0, 0, 0)
             @discography_link = "http://s-mileage.jp/discography/detail_00005/"
-            @image_links = [
+            @artwork_links = [
               {
                 :title => "あすはデートなのに、今すぐ声が聞きたい",
                 :uri => "http://s-mileage.jp/discography/obj/img/000/005/100922-1211_01l.jpg",
