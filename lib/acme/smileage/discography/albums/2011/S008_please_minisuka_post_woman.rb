@@ -14,6 +14,7 @@ module Acme
             @nicknames = ["PMPW"]
             @release_date = Date.new(2011, 12, 28)
             @oricon = Sales.new(34132, 36513, 5, 4)
+            @discography_link = "http://s-mileage.jp/discography/detail_00091/"
             @image_links = [
               {
                 :title => "プリーズ ミニスカ ポストウーマン! 【通常盤】",

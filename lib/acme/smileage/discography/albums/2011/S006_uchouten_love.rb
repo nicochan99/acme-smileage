@@ -14,6 +14,7 @@ module Acme
             @nicknames = ["有頂天"]
             @release_date = Date.new(2011, 8, 3)
             @oricon = Sales.new(29328, 33823, 5, 4)
+            @discography_link = "http://s-mileage.jp/discography/detail_00076/"
             @image_links = [
               {
                 :title => "有頂天LOVE 【通常盤】",

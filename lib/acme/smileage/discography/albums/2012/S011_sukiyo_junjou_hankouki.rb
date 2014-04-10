@@ -14,6 +14,7 @@ module Acme
             @nicknames = ["好き純"]
             @release_date = Date.new(2012, 8, 22)
             @oricon = Sales.new(22866, 24508, 7, 3)
+            @discography_link = "http://s-mileage.jp/discography/detail_00116/"
             @image_links = [
               {
                 :title => "好きよ、純情反抗期。 【通常盤】",

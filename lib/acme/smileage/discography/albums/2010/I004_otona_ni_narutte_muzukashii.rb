@@ -14,6 +14,7 @@ module Acme
             @nicknames = ["オトムズ", "オトむず"]
             @release_date = Date.new(2010, 3, 14)
             @oricon = Sales.new(1324, 2290, 42, 3)
+            @discography_link = "http://s-mileage.jp/discography/detail_00014/"
             @image_links = [
               {
                 :title => "オトナになるって難しい!!!",

@@ -14,6 +14,7 @@ module Acme
             @nicknames = ["時給", "美人ママ"]
             @release_date = Date.new(2010, 9, 29)
             @oricon = Sales.new(17998, 29533, 5, 7)
+            @discography_link = "http://s-mileage.jp/discography/detail_00039/"
             @image_links = [
               {
                 :title => "「同じ時給で働く友達の美人ママ」 通常盤",

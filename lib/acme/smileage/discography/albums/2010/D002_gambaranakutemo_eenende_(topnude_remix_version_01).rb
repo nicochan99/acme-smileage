@@ -13,6 +13,7 @@ module Acme
             @name = "○○ がんばらなくてもええねんで!! (TopNude Remix Version 01)"
             @nicknames = []
             @release_date = Date.new(2010, 8, 7)
+            @discography_link = "http://s-mileage.jp/discography/detail_00037/"
             @image_links = [
               {
                 :title => "○○ がんばらなくてもええねんで!! (TopNude Remix Version 01)",

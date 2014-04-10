@@ -13,6 +13,7 @@ module Acme
             @name = "有頂天LOVE ～rocketman mix～"
             @nicknames = []
             @release_date = Date.new(2011, 8, 18)
+            @discography_link = "http://s-mileage.jp/discography/detail_00081/"
             @image_links = [
               {
                 :title => "有頂天LOVE ～rocketman mix～",

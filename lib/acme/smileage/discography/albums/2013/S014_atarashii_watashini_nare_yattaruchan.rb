@@ -14,6 +14,7 @@ module Acme
             @nicknames = ["あたわた", "ヤッタル"]
             @release_date = Date.new(2013, 7, 3)
             @oricon = Sales.new(26573, 27935, 4, 3)
+            @discography_link = "http://s-mileage.jp/discography/detail_00149/"
             @image_links = [
               {
                 :title => "新しい私になれ!/ヤッタルチャン 【通常盤】",

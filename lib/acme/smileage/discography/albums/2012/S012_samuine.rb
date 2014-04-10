@@ -14,6 +14,7 @@ module Acme
             @nicknames = []
             @release_date = Date.new(2012, 11, 28)
             @oricon = Sales.new(19308, 21120, 6, 3)
+            @discography_link = "http://s-mileage.jp/discography/detail_00120/"
             @image_links = [
               {
                 :title => "寒いね。 【通常盤】",
