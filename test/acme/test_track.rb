@@ -4,7 +4,7 @@ require "date"
 
 require "minitest_helper"
 
-class Acme::TestTrack < MiniTest::Unit::TestCase
+class Acme::TestTrack < Minitest::Test
   def test_tracks
     s = ::Acme::Smileage.new
 

@@ -4,7 +4,7 @@ require "date"
 
 require "minitest_helper"
 
-class Acme::TestSmileage < MiniTest::Unit::TestCase
+class Acme::TestSmileage < Minitest::Test
   def test_version_number
     refute_nil ::Acme::Smileage::VERSION
   end

@@ -4,7 +4,7 @@ require "date"
 
 require "minitest_helper"
 
-class Acme::TestMember < MiniTest::Unit::TestCase
+class Acme::TestMember < Minitest::Test
   def test_member_all
     s = ::Acme::Smileage.new
     rp = s.members.select {|e| e.name =~ /Rina/ }.first
