@@ -44,22 +44,24 @@ module Acme
             return nil if not uri or not uri =~ /\/song\/(\d+)/
             id = $1
 
-            swf_uri = URI(uri) + "/user/phplib/swf/showkasi.php?ID=#{id}"
-            r = open(swf_uri, "User-Agent" => DEFAULT_USER_AGENT) {|f| f.read }
-            r = r[(10 + 16 * 4) - 1, r.length - (10 + 16 * 4) - 13].strip
+            r = http_get(uri, "/user/phplib/swf/showkasi.php?ID=#{id}")
+            r = r[(10 + 16 * 4) - 1, r.length - (10 + 16 * 4) - 13]
             r.force_encoding("utf-8")
-            r
+            r.strip
           end
 
           def get_utamap(uri)
             return nil if not uri or not uri =~ /\?surl=([a-zA-Z0-9-]+)/
             id = $1
 
-            swf_uri = URI(uri) + "/phpflash/flashfalsephp.php?unum=#{id}"
-            r = open(swf_uri, "User-Agent" => DEFAULT_USER_AGENT) {|f| f.read }
+            r = http_get(uri, "/phpflash/flashfalsephp.php?unum=#{id}")
             r.force_encoding("utf-8")
-            r.sub!(/^.*?test2=/, "")
-            r
+            r.sub(/^.*?test2=/, "").strip
+          end
+
+          def http_get(baseuri, path)
+            uri = URI(baseuri) + path
+            open(uri, "User-Agent" => DEFAULT_USER_AGENT) {|f| f.read }
           end
         end
       end
