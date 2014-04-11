@@ -14,6 +14,7 @@ module Acme
             @name_romaji = "shortcut (remix.ver)"
             @nicknames = []
             @release_date = Date.new(2011, 8, 18)
+            @oricon = Sales.not_available
             @discography_link = "http://s-mileage.jp/discography/detail_00082/"
             @artwork_links = [
               {
