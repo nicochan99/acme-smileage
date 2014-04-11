@@ -11,6 +11,7 @@ module Acme
 
           def initialize
             @name = "○○ がんばらなくてもええねんで！！ (TopNude Remix Version 01)"
+            @name_romaji = "gambaranakutemo eenende!! (topnude remix version 01)"
             @nicknames = []
             @release_date = Date.new(2010, 8, 7)
             @discography_link = "http://s-mileage.jp/discography/detail_00037/"

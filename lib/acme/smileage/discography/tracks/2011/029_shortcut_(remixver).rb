@@ -12,6 +12,7 @@ module Acme
           def initialize
             super
             @name = "ショートカット (Remix.Ver)"
+            @name_romaji = "shortcut (remix.ver)"
             @nicknames = []
             @arranger = "平田祥一郎"
             @lyric_links = {

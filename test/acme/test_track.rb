@@ -10,6 +10,7 @@ class Acme::TestTrack < Minitest::Test
 
     a = s.tracks.find {|e| e.name =~ /クレームブリュレ/ }
     assert_equal "サンキュ！ クレームブリュレの友情", a.name
+    assert_equal "thank you! creme brulee no yuujou", a.name_romaji
     assert_equal ["クレームブリュレ"], a.nicknames
     assert_equal "亜伊林", a.lyric
     assert_equal "つんく♂", a.composer
@@ -25,6 +26,7 @@ class Acme::TestTrack < Minitest::Test
 
     a = s.tracks.find {|e| e.name =~ /ちょこっと/ }
     assert_equal "ちょこっとLOVE", a.name
+    assert_equal "chokotto love", a.name_romaji
     assert_equal ["ちょこラブ", "ちょこLOVE"], a.nicknames
     assert_equal "鈴木俊介", a.arranger
     assert_equal [], a.youtube_links
@@ -38,6 +40,7 @@ class Acme::TestTrack < Minitest::Test
 
     a = s.tracks.find {|e| e.name =~ /激萌え/ }
     assert_equal "スマイレージ シングルス 激萌えリミックス", a.name
+    assert_equal "smileage singles gekimoe remix", a.name_romaji
     assert_equal [], a.nicknames
     assert_equal "田中直", a.arranger
     assert_equal [], a.youtube_links

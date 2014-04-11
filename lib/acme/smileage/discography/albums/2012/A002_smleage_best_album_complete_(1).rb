@@ -11,6 +11,7 @@ module Acme
 
           def initialize
             @name = "スマイレージ ベストアルバム完全版①"
+            @name_romaji = "smleage best album complete (1)"
             @nicknames = []
             @release_date = Date.new(2012, 5, 30)
             @oricon = Sales.new(6339, 8095, 13, 3)

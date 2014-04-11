@@ -11,6 +11,7 @@ module Acme
 
           def initialize
             @name = "ショートカット"
+            @name_romaji = "shortcut"
             @nicknames = []
             @release_date = Date.new(2011, 2, 9)
             @oricon = Sales.new(20492, 22831, 5, 3)

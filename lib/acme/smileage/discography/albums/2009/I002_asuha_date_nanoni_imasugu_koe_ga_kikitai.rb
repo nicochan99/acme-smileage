@@ -11,6 +11,7 @@ module Acme
 
           def initialize
             @name = "あすはデートなのに、今すぐ声が聞きたい"
+            @name_romaji = "asuha date nanoni imasugu koe ga kikitai"
             @nicknames = ["あすデー"]
             @release_date = Date.new(2009, 9, 23)
             @oricon = Sales.new(0, 0, 0, 0)

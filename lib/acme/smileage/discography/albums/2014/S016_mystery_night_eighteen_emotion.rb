@@ -11,6 +11,7 @@ module Acme
 
           def initialize
             @name = "ミステリーナイト！／エイティーン エモーション"
+            @name_romaji = "mystery night!/eighteen emotion"
             @nicknames = ["ミスナイ", "エイエモ", "18エモ"]
             @release_date = Date.new(2014, 4, 30)
             @oricon = Sales.new(0, 0, 0, 0)

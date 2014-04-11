@@ -11,6 +11,7 @@ module Acme
 
           def initialize
             @name = "ショートカット (Remix.Ver)"
+            @name_romaji = "shortcut (remix.ver)"
             @nicknames = []
             @release_date = Date.new(2011, 8, 18)
             @discography_link = "http://s-mileage.jp/discography/detail_00082/"

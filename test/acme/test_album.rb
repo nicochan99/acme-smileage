@@ -10,6 +10,7 @@ class Acme::TestAlbum < Minitest::Test
 
     a = s.albums.find {|e| e.name =~ /夢見る/ }
     assert_equal "夢見る 15歳", a.name
+    assert_equal "yumemiru 15sai", a.name_romaji
     assert_equal Date.new(2010, 5, 26), a.release_date
     assert_equal [20438, 24936, 5, 4], a.oricon.to_a
 
@@ -48,6 +49,7 @@ class Acme::TestAlbum < Minitest::Test
 
     a = s.albums.find {|e| e.name =~ /ぁまのじゃく/ }
     assert_equal "ぁまのじゃく", a.name
+    assert_equal "amanojaku", a.name_romaji
     assert_equal Date.new(2009, 6, 7), a.release_date
     assert_equal [0, 0, 0, 0], a.oricon.to_a
     artwork_links = [
@@ -76,6 +78,7 @@ class Acme::TestAlbum < Minitest::Test
 
     a = s.albums.find {|e| e.name =~ /PAX JAPONICA/ }
     assert_equal "夢見る 15歳 (PAX JAPONICA GROOVE REMIX)", a.name
+    assert_equal "yumemiru 15sai (pax japonica groove remix)", a.name_romaji
     assert_equal Date.new(2010, 6, 18), a.release_date
     artwork_links = [
       {
@@ -103,6 +106,7 @@ class Acme::TestAlbum < Minitest::Test
 
     a = s.albums.find {|e| e.name =~ /悪ガキ/ }
     assert_equal "悪ガキッ①", a.name
+    assert_equal "waru gaki (1)", a.name_romaji
     assert_equal Date.new(2010, 12, 8), a.release_date
     assert_equal [8905, 11848, 18, 5], a.oricon.to_a
 
@@ -147,6 +151,7 @@ class Acme::TestAlbum < Minitest::Test
 
     a = s.albums.find {|e| e.name =~ /ベスト/ }
     assert_equal "スマイレージ ベストアルバム完全版①", a.name
+    assert_equal "smleage best album complete (1)", a.name_romaji
     assert_equal [], a.nicknames
     assert_equal Date.new(2012, 5, 30), a.release_date
     assert_equal [6339, 8095, 13, 3], a.oricon.to_a

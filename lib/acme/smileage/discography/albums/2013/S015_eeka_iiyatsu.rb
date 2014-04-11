@@ -11,6 +11,7 @@ module Acme
 
           def initialize
             @name = "ええか！？／「良い奴」"
+            @name_romaji = "eeka!?/iiyatsu"
             @nicknames = []
             @release_date = Date.new(2013, 12, 18)
             @oricon = Sales.new(33320, 37141, 3, 6)

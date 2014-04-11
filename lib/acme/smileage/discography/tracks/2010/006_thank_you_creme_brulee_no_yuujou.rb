@@ -13,6 +13,7 @@ module Acme
             super
             @name = "サンキュ！ クレームブリュレの友情"
             @lyric = "亜伊林"
+            @name_romaji = "thank you! creme brulee no yuujou"
             @nicknames = ["クレームブリュレ"]
             @arranger = "高橋諭一"
             @lyric_links = {

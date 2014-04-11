@@ -12,6 +12,7 @@ module Acme
           def initialize
             super
             @name = "○○ がんばらなくてもええねんで！！ (TopNude Remix Version 01)"
+            @name_romaji = "gambaranakutemo eenende!! (topnude remix version 01)"
             @nicknames = []
             @arranger = "高橋諭一"
             @lyric_links = {

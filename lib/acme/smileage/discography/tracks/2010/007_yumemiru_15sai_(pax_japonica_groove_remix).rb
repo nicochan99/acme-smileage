@@ -12,6 +12,7 @@ module Acme
           def initialize
             super
             @name = "夢見る 15歳 (PAX JAPONICA GROOVE REMIX)"
+            @name_romaji = "yumemiru 15sai (pax japonica groove remix)"
             @nicknames = []
             @arranger = "平田祥一郎"
             @lyric_links = {

@@ -11,6 +11,7 @@ module Acme
 
           def initialize
             @name = "夢見る 15歳 (PAX JAPONICA GROOVE REMIX)"
+            @name_romaji = "yumemiru 15sai (pax japonica groove remix)"
             @nicknames = []
             @release_date = Date.new(2010, 6, 18)
             @discography_link = "http://s-mileage.jp/discography/detail_00032/"

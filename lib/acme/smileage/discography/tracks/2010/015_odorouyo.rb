@@ -12,6 +12,7 @@ module Acme
           def initialize
             super
             @name = "踊ろうよ"
+            @name_romaji = "odorouyo"
             @nicknames = []
             @arranger = "藤澤慶昌"
             @lyric_links = {

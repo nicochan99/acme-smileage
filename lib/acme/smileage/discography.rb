@@ -64,9 +64,13 @@ module Acme
 
       def find(label, name, targets)
         matcher = Matcher.new(name.encode("UTF-8"))
-        canon_name = matcher.match(targets.map {|e| [e.name] | e.nicknames }.flatten)
+        canon_name = matcher.match(targets.map {|e| names(e) }.flatten)
         raise ArgumentError, "#{label} not found: #{name}" unless canon_name
-        targets.find {|e| e.name == canon_name or e.nicknames.include?(canon_name) }
+        targets.find {|e| names(e).include?(canon_name) }
+      end
+
+      def names(obj)
+        [obj.name, obj.name_romaji] | obj.nicknames
       end
 
       def album(album_class)

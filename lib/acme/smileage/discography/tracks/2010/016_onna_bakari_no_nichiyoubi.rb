@@ -12,6 +12,7 @@ module Acme
           def initialize
             super
             @name = "女ばかりの日曜日"
+            @name_romaji = "onna bakari no nichiyoubi"
             @nicknames = []
             @arranger = "鈴木俊介"
             @lyric_links = {

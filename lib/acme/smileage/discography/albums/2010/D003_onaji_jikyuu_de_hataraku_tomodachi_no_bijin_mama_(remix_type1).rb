@@ -11,6 +11,7 @@ module Acme
 
           def initialize
             @name = "同じ時給で働く友達の美人ママ (Remix Type1)"
+            @name_romaji = "onaji jikyuu de hataraku tomodachi no bijin mama (remix type1)"
             @nicknames = []
             @release_date = Date.new(2010, 11, 3)
             @discography_link = "http://s-mileage.jp/discography/detail_00051/"
