@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{All about Japanese pop star "S/mileage"}
   spec.description   = %q{"S/mileage" is one of highly famous Japanese pop stars.
 This module, acme-smileage, provides an easy method to catch up with S/mileage.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/nicochan99/acme-smileage"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,6 +20,8 @@ This module, acme-smileage, provides an easy method to catch up with S/mileage.}
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.5"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "minitest"
+  spec.add_development_dependency "rake", "~> 10.2"
+  spec.add_development_dependency "minitest", "~> 5.3"
+  spec.add_runtime_dependency "amatch", '~> 0.3'
+  spec.add_runtime_dependency "moji", '~> 1.6'
 end
