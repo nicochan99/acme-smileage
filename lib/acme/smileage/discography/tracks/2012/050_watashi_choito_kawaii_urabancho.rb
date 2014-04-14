@@ -15,6 +15,7 @@ module Acme
             @name_romaji = "watashi choito kawaii urabancho"
             @nicknames = ["ちょいかわ", "ちょいかわ番長", "裏番長"]
             @arranger = "板垣祐介"
+            @hpma = HelloProjectMusicAward.new(2012, 20, 253.5, 113)
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-121128-151",
               :utanet => "http://www.uta-net.com/song/138711/",

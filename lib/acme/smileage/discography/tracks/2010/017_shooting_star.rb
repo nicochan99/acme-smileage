@@ -15,6 +15,7 @@ module Acme
             @name_romaji = "shooting star"
             @nicknames = []
             @arranger = "湯浅公一"
+            @hpma = HelloProjectMusicAward.new(2011, 25, 112.0, 64)
             @lyric_links = {
               :utamap => "",
               :utanet => "http://www.uta-net.com/song/105947/",

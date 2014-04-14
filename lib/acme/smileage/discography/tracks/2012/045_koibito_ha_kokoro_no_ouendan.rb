@@ -15,6 +15,7 @@ module Acme
             @name_romaji = "koibito ha kokoro no ouendan"
             @nicknames = []
             @arranger = "板垣祐介"
+            @hpma = HelloProjectMusicAward.new(2012, 98, 14.0, 12)
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-120502-083",
               :utanet => "http://www.uta-net.com/song/129100/",

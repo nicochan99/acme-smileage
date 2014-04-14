@@ -5,6 +5,8 @@ require "open-uri"
 require "singleton"
 require "uri"
 
+require "acme/smileage/discography/hello_project_music_award"
+
 module Acme
   class Smileage
     class Discography
@@ -13,6 +15,7 @@ module Acme
           DEFAULT_USER_AGENT = "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)"
 
           attr_reader :name, :name_romaji, :nicknames, :lyric, :composer, :arranger
+          attr_reader :hpma
           attr_reader :lyric_links, :youtube_links, :itunes_links
 
           def initialize

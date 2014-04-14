@@ -15,6 +15,7 @@ module Acme
             @name_romaji = "onaji jikyuu de hataraku tomodachi no bijin mama"
             @nicknames = ["時給", "美人ママ"]
             @arranger = "山崎淳"
+            @hpma = HelloProjectMusicAward.new(2010, 47, 43.5, 32)
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-100929-010",
               :utanet => "http://www.uta-net.com/song/102019/",

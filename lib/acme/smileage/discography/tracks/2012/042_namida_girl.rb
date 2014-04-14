@@ -15,6 +15,7 @@ module Acme
             @name_romaji = "namida girl"
             @nicknames = []
             @arranger = "板垣祐介"
+            @hpma = HelloProjectMusicAward.new(2012, 108, 10.5, 8)
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-120201-014",
               :utanet => "http://www.uta-net.com/song/125053/",

@@ -15,6 +15,7 @@ module Acme
             @name_romaji = "sayonara sayonara sayonara"
             @nicknames = []
             @arranger = "AKIRA"
+            @hpma = HelloProjectMusicAward.new(2013, 96, 20.0, 14)
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-130522-195",
               :utanet => "http://www.uta-net.com/song/146542/",

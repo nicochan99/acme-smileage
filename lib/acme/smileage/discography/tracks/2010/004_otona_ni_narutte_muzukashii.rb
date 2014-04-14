@@ -15,6 +15,7 @@ module Acme
             @name_romaji = "otona ni narutte muzukashii!!!"
             @nicknames = ["オトムズ", "オトむず"]
             @arranger = "板垣祐介"
+            @hpma = HelloProjectMusicAward.new(2010, 29, 77.5, 48)
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=dk100527_6",
               :utanet => "http://www.uta-net.com/song/91873/",

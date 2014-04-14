@@ -16,6 +16,7 @@ module Acme
             @name_romaji = "thank you! creme brulee no yuujou"
             @nicknames = ["クレームブリュレ"]
             @arranger = "高橋諭一"
+            @hpma = HelloProjectMusicAward.new(2010, 42, 49.0, 31)
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-100526-019",
               :utanet => "http://www.uta-net.com/song/95254/",
