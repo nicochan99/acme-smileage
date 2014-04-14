@@ -14,7 +14,7 @@ module Acme
             @name = "プリーズ ミニスカ ポストウーマン！"
             @name_romaji = "please minisuka post woman!"
             @nicknames = ["PMPW"]
-            @arranger = "大久保薫"
+            @arrangers = ["大久保薫"]
             @hpma = HelloProjectMusicAward.new(2012, 5, 913.0, 405)
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-111228-031",

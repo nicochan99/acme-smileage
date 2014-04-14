@@ -14,7 +14,7 @@ module Acme
             @name = "女ばかりの日曜日"
             @name_romaji = "onna bakari no nichiyoubi"
             @nicknames = []
-            @arranger = "鈴木俊介"
+            @arrangers = ["鈴木俊介"]
             @hpma = HelloProjectMusicAward.new(2011, 78, 16.0, 9)
             @lyric_links = {
               :utamap => "",

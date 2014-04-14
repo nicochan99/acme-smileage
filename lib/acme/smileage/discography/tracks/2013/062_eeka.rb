@@ -14,7 +14,7 @@ module Acme
             @name = "ええか！？"
             @name_romaji = "eeka!?"
             @nicknames = []
-            @arranger = "近藤圭一"
+            @arrangers = ["近藤圭一"]
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-131218-069",
               :utanet => "http://www.uta-net.com/song/157051/",

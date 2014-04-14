@@ -14,7 +14,7 @@ module Acme
             @name = "シューティング スター"
             @name_romaji = "shooting star"
             @nicknames = []
-            @arranger = "湯浅公一"
+            @arrangers = ["湯浅公一"]
             @hpma = HelloProjectMusicAward.new(2011, 25, 112.0, 64)
             @lyric_links = {
               :utamap => "",

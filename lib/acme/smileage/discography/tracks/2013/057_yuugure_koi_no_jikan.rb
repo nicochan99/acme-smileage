@@ -14,7 +14,7 @@ module Acme
             @name = "夕暮れ 恋の時間"
             @name_romaji = "yuugure koi no jikan"
             @nicknames = ["夕暮れ"]
-            @arranger = "板垣祐介"
+            @arrangers = ["板垣祐介"]
             @hpma = HelloProjectMusicAward.new(2013, 12, 631.5, 324)
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-130522-193",
