@@ -14,7 +14,6 @@ module Acme
             @name_romaji = "onaji jikyuu de hataraku tomodachi no bijin mama (remix type1)"
             @nicknames = []
             @release_date = Date.new(2010, 11, 3)
-            @oricon = Sales.not_available
             @discography_link = "http://s-mileage.jp/discography/detail_00051/"
             @artwork_links = [
               {

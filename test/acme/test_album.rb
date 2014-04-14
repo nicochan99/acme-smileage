@@ -193,17 +193,4 @@ class Acme::TestAlbum < Minitest::Test
     assert_equal false, a.indies?
     assert_equal false, a.download_only?
   end
-
-  def test_download_only_sales
-    s = ::Acme::Smileage.new
-
-    a = s.albums.find {|e| e.name =~ /PAX JAPONICA/ }
-    b = s.albums.find {|e| e.name =~ /夢見る/ }
-
-    assert_equal false, a.oricon.available?
-    assert_equal [0, 0, 0, 0], a.oricon.to_a
-
-    assert_equal true, b.oricon.available?
-    assert_equal [20438, 24936, 5, 4], b.oricon.to_a
-  end
 end
