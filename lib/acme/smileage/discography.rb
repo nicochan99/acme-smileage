@@ -40,10 +40,6 @@ module Acme
         initialize_tracks
       end
 
-      def initialize_tracks
-        @tracks = @albums.sort_by {|e| e.release_date }.map{|e| e.tracks }.flatten.uniq
-      end
-
       def discography
         @albums.dup
       end
@@ -71,6 +67,10 @@ module Acme
 
       def names(obj)
         [obj.name, obj.name_romaji] | obj.nicknames
+      end
+
+      def initialize_tracks
+        @tracks = @albums.sort_by {|e| e.release_date }.map{|e| e.tracks }.flatten.uniq
       end
 
       def album(album_class)
