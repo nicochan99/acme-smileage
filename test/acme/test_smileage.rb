@@ -65,13 +65,6 @@ class Acme::TestSmileage < Minitest::Test
     assert_equal ["Akari", "Ayaka", "Fuyuka", "Kana", "Kanon", "Meimi", "Rina", "Saki", "Yuuka"], s.members.sort_by {|e| e.name }.map{|e| e.first_name_en }
   end
 
-  def test_tracks
-    s = ::Acme::Smileage.new
-    assert_equal 65, s.tracks.length
-    assert_equal 9, s.tracks.select {|e| e.cover? }.length
-    assert_equal 8, s.tracks.select {|e| e.remix? }.length
-  end
-
   def test_discography
     s = ::Acme::Smileage.new
 
@@ -84,6 +77,13 @@ class Acme::TestSmileage < Minitest::Test
     assert_equal 20, s.discography.select {|e| e.single? }.length
 
     assert_equal 16, s.discography.select {|e| e.single? and e.major? }.length
+  end
+
+  def test_tracks
+    s = ::Acme::Smileage.new
+    assert_equal 65, s.tracks.length
+    assert_equal 9, s.tracks.select {|e| e.cover? }.length
+    assert_equal 8, s.tracks.select {|e| e.remix? }.length
   end
 
   def test_find_discography

@@ -48,12 +48,12 @@ module Acme
         @tracks.dup
       end
 
-      def find_track(name)
-        find("Track", name, @tracks)
-      end
-
       def find_discography(name)
         find("Discography", name, @albums)
+      end
+
+      def find_track(name)
+        find("Track", name, @tracks)
       end
 
       private

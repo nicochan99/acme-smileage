@@ -39,12 +39,12 @@ module Acme
       @discography.tracks
     end
 
-    def find_track(name)
-      @discography.find_track(name)
-    end
-
     def find_discography(name)
       @discography.find_discography(name)
+    end
+
+    def find_track(name)
+      @discography.find_track(name)
     end
   end
 end
