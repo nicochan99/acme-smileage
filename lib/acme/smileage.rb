@@ -31,8 +31,8 @@ module Acme
       end
     end
 
-    def albums
-      @discography.albums
+    def discography
+      @discography.discography
     end
 
     def tracks
@@ -43,8 +43,8 @@ module Acme
       @discography.find_track(name)
     end
 
-    def find_album(name)
-      @discography.find_album(name)
+    def find_discography(name)
+      @discography.find_discography(name)
     end
   end
 end

@@ -8,7 +8,7 @@ class Acme::TestAlbum < Minitest::Test
   def test_single
     s = ::Acme::Smileage.new
 
-    a = s.albums.find {|e| e.name =~ /夢見る/ }
+    a = s.discography.find {|e| e.name =~ /夢見る/ }
     assert_equal "夢見る 15歳", a.name
     assert_equal "yumemiru 15sai", a.name_romaji
     assert_equal Date.new(2010, 5, 26), a.release_date
@@ -47,7 +47,7 @@ class Acme::TestAlbum < Minitest::Test
   def test_indies
     s = ::Acme::Smileage.new
 
-    a = s.albums.find {|e| e.name =~ /ぁまのじゃく/ }
+    a = s.discography.find {|e| e.name =~ /ぁまのじゃく/ }
     assert_equal "ぁまのじゃく", a.name
     assert_equal "amanojaku", a.name_romaji
     assert_equal Date.new(2009, 6, 7), a.release_date
@@ -76,7 +76,7 @@ class Acme::TestAlbum < Minitest::Test
   def test_download_only
     s = ::Acme::Smileage.new
 
-    a = s.albums.find {|e| e.name =~ /PAX JAPONICA/ }
+    a = s.discography.find {|e| e.name =~ /PAX JAPONICA/ }
     assert_equal "夢見る 15歳 (PAX JAPONICA GROOVE REMIX)", a.name
     assert_equal "yumemiru 15sai (pax japonica groove remix)", a.name_romaji
     assert_equal Date.new(2010, 6, 18), a.release_date
@@ -104,7 +104,7 @@ class Acme::TestAlbum < Minitest::Test
   def test_album
     s = ::Acme::Smileage.new
 
-    a = s.albums.find {|e| e.name =~ /悪ガキ/ }
+    a = s.discography.find {|e| e.name =~ /悪ガキ/ }
     assert_equal "悪ガキッ①", a.name
     assert_equal "waru gaki (1)", a.name_romaji
     assert_equal Date.new(2010, 12, 8), a.release_date
@@ -149,7 +149,7 @@ class Acme::TestAlbum < Minitest::Test
   def test_best_album
     s = ::Acme::Smileage.new
 
-    a = s.albums.find {|e| e.name =~ /ベスト/ }
+    a = s.discography.find {|e| e.name =~ /ベスト/ }
     assert_equal "スマイレージ ベストアルバム完全版①", a.name
     assert_equal "smleage best album complete (1)", a.name_romaji
     assert_equal [], a.nicknames

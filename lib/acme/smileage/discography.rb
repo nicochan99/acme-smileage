@@ -44,7 +44,7 @@ module Acme
         @tracks = @albums.sort_by {|e| e.release_date }.map{|e| e.tracks }.flatten.uniq
       end
 
-      def albums
+      def discography
         @albums.dup
       end
 
@@ -56,8 +56,8 @@ module Acme
         find("Track", name, @tracks)
       end
 
-      def find_album(name)
-        find("Album", name, @albums)
+      def find_discography(name)
+        find("Discography", name, @albums)
       end
 
       private

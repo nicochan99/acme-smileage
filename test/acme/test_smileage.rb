@@ -72,33 +72,33 @@ class Acme::TestSmileage < Minitest::Test
     assert_equal 8, s.tracks.select {|e| e.remix? }.length
   end
 
-  def test_albums
+  def test_discography
     s = ::Acme::Smileage.new
 
-    assert_equal 28, s.albums.length
+    assert_equal 28, s.discography.length
 
-    assert_equal 4, s.albums.select {|e| e.indies? }.length
-    assert_equal 24, s.albums.select {|e| e.major? }.length
+    assert_equal 4, s.discography.select {|e| e.indies? }.length
+    assert_equal 24, s.discography.select {|e| e.major? }.length
 
-    assert_equal 3, s.albums.select {|e| e.album? }.length
-    assert_equal 20, s.albums.select {|e| e.single? }.length
+    assert_equal 3, s.discography.select {|e| e.album? }.length
+    assert_equal 20, s.discography.select {|e| e.single? }.length
 
-    assert_equal 16, s.albums.select {|e| e.single? and e.major? }.length
+    assert_equal 16, s.discography.select {|e| e.single? and e.major? }.length
   end
 
-  def test_find_album
+  def test_find_discography
     s = ::Acme::Smileage.new
 
-    a = s.albums.find {|e| e.name =~ /夢見る/ }
-    assert_equal a, s.find_album("夢15")
-    assert_equal a, s.find_album("夢 15")
-    assert_equal a, s.find_album("夢１５")
-    assert_equal a, s.find_album("夢フィフ")
+    a = s.discography.find {|e| e.name =~ /夢見る/ }
+    assert_equal a, s.find_discography("夢15")
+    assert_equal a, s.find_discography("夢 15")
+    assert_equal a, s.find_discography("夢１５")
+    assert_equal a, s.find_discography("夢フィフ")
 
-    a = s.albums.find {|e| e.name =~ /スマイルセンセーション/ }
-    assert_equal a, s.find_album("スマセン")
-    assert_equal a, s.find_album("スマイルセンセーション")
-    assert_equal a, s.find_album("スマイル センセーション")
+    a = s.discography.find {|e| e.name =~ /スマイルセンセーション/ }
+    assert_equal a, s.find_discography("スマセン")
+    assert_equal a, s.find_discography("スマイルセンセーション")
+    assert_equal a, s.find_discography("スマイル センセーション")
   end
 
   def test_find_track
