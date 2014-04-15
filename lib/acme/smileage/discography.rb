@@ -40,12 +40,20 @@ module Acme
         initialize_tracks
       end
 
-      def discography
-        @albums.dup
+      def discography(&block)
+        if block
+          @albums.select(&block)
+        else
+          @albums.dup
+        end
       end
 
-      def tracks
-        @tracks.dup
+      def tracks(&block)
+        if block
+          @tracks.select(&block)
+        else
+          @tracks.dup
+        end
       end
 
       def find_discography(name)

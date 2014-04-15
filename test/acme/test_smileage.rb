@@ -21,29 +21,28 @@ class Acme::TestSmileage < Minitest::Test
 
   def test_member_active
     s = ::Acme::Smileage.new
-    assert_equal ["Ayaka", "Kanon", "Kana", "Akari", "Rina", "Meimi"], s.members(:active).map{|e| e.first_name_en }
+    assert_equal ["Ayaka", "Kanon", "Kana", "Akari", "Rina", "Meimi"], s.members {|e| e.active? }.map{|e| e.first_name_en }
   end
 
   def test_member_graduate
     s = ::Acme::Smileage.new
-    assert_equal ["Yuuka", "Saki", "Fuyuka"], s.members(:graduate).map{|e| e.first_name_en }
-    assert_equal ["Yuuka", "Saki", "Fuyuka"], s.members(:graduated).map{|e| e.first_name_en }
+    assert_equal ["Yuuka", "Saki", "Fuyuka"], s.members {|e| e.graduated? }.map{|e| e.first_name_en }
   end
 
   def test_member_date
     s = ::Acme::Smileage.new
 
-    assert_equal ["Ayaka", "Yuuka", "Kanon", "Saki"], s.members(Date.new(2011, 8, 13)).map{|e| e.first_name_en }
-    assert_equal ["Ayaka", "Yuuka", "Kanon", "Saki", "Kana", "Fuyuka", "Akari", "Rina", "Meimi"], s.members(Date.new(2011, 8, 14)).map{|e| e.first_name_en }
+    assert_equal ["Ayaka", "Yuuka", "Kanon", "Saki"], s.members {|e| e.active?(Date.new(2011, 8, 13)) }.map{|e| e.first_name_en }
+    assert_equal ["Ayaka", "Yuuka", "Kanon", "Saki", "Kana", "Fuyuka", "Akari", "Rina", "Meimi"], s.members {|e| e.active?(Date.new(2011, 8, 14)) }.map{|e| e.first_name_en }
 
-    assert_equal ["Ayaka", "Yuuka", "Kanon", "Saki", "Kana", "Fuyuka", "Akari", "Rina", "Meimi"], s.members(Date.new(2011, 8, 27)).map{|e| e.first_name_en }
-    assert_equal ["Ayaka", "Yuuka", "Kanon", "Kana", "Fuyuka", "Akari", "Rina", "Meimi"], s.members(Date.new(2011, 8, 28)).map{|e| e.first_name_en }
+    assert_equal ["Ayaka", "Yuuka", "Kanon", "Saki", "Kana", "Fuyuka", "Akari", "Rina", "Meimi"], s.members {|e| e.active?(Date.new(2011, 8, 27)) }.map{|e| e.first_name_en }
+    assert_equal ["Ayaka", "Yuuka", "Kanon", "Kana", "Fuyuka", "Akari", "Rina", "Meimi"], s.members {|e| e.active?(Date.new(2011, 8, 28)) }.map{|e| e.first_name_en }
 
-    assert_equal ["Ayaka", "Yuuka", "Kanon", "Kana", "Fuyuka", "Akari", "Rina", "Meimi"], s.members(Date.new(2011, 9, 9)).map{|e| e.first_name_en }
-    assert_equal ["Ayaka", "Yuuka", "Kanon", "Kana", "Akari", "Rina", "Meimi"], s.members(Date.new(2011, 9, 10)).map{|e| e.first_name_en }
+    assert_equal ["Ayaka", "Yuuka", "Kanon", "Kana", "Fuyuka", "Akari", "Rina", "Meimi"], s.members {|e| e.active?(Date.new(2011, 9, 9)) }.map{|e| e.first_name_en }
+    assert_equal ["Ayaka", "Yuuka", "Kanon", "Kana", "Akari", "Rina", "Meimi"], s.members {|e| e.active?(Date.new(2011, 9, 10)) }.map{|e| e.first_name_en }
 
-    assert_equal ["Ayaka", "Yuuka", "Kanon", "Kana", "Akari", "Rina", "Meimi"], s.members(Date.new(2011, 12, 31)).map{|e| e.first_name_en }
-    assert_equal ["Ayaka", "Kanon", "Kana", "Akari", "Rina", "Meimi"], s.members(Date.new(2012, 1, 1)).map{|e| e.first_name_en }
+    assert_equal ["Ayaka", "Yuuka", "Kanon", "Kana", "Akari", "Rina", "Meimi"], s.members {|e| e.active?(Date.new(2011, 12, 31)) }.map{|e| e.first_name_en }
+    assert_equal ["Ayaka", "Kanon", "Kana", "Akari", "Rina", "Meimi"], s.members {|e| e.active?(Date.new(2012, 1, 1)) }.map{|e| e.first_name_en }
   end
 
   def test_member_select
@@ -70,6 +69,16 @@ class Acme::TestSmileage < Minitest::Test
 
     assert_equal 28, s.discography.length
 
+    # discography に直接ブロック指定してフィルタ
+    assert_equal 4, s.discography {|e| e.indies? }.length
+    assert_equal 24, s.discography {|e| e.major? }.length
+
+    assert_equal 3, s.discography {|e| e.album? }.length
+    assert_equal 20, s.discography {|e| e.single? }.length
+
+    assert_equal 16, s.discography {|e| e.single? and e.major? }.length
+
+    # select でフィルタ
     assert_equal 4, s.discography.select {|e| e.indies? }.length
     assert_equal 24, s.discography.select {|e| e.major? }.length
 

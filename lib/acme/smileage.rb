@@ -16,27 +16,20 @@ module Acme
       @discography = Acme::Smileage::Discography.new
     end
 
-    def members(type=nil)
-      case type
-      when Date
-        @members.select {|e| e.active?(type) }
-      when :graduate, :graduated
-        @members.select {|e| e.graduated? }
-      when :active
-        @members.select {|e| e.active? }
-      when nil
-        @members.dup
+    def members(&block)
+      if block
+        @members.members.select(&block)
       else
-        raise ArgumentError, "Invalid type: `#{type}'"
+        @members.members.dup
       end
     end
 
-    def discography
-      @discography.discography
+    def discography(&block)
+      @discography.discography(&block)
     end
 
-    def tracks
-      @discography.tracks
+    def tracks(&block)
+      @discography.tracks(&block)
     end
 
     def find_discography(name)
