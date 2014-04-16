@@ -50,6 +50,7 @@ module Acme
             r = http_get(uri, "/user/phplib/swf/showkasi.php?ID=#{id}")
             r = r[(10 + 16 * 4) - 1, r.length - (10 + 16 * 4) - 13]
             r.force_encoding("utf-8")
+            r.sub!(/\A\0\n/, "")
             r.strip
           end
 
