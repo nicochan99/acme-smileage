@@ -68,15 +68,18 @@ Or install it yourself as:
     p track.name                #=> "ヤッタルチャン"
     p track.name_romaji         #=> "yattaruchan"
     p track.nicknames           #=> ["ヤッタル"]
-    p track.lyricists           #=> "つんく♂"
-    p track.composers           #=> "つんく♂"
-    p track.arrangers           #=> "大久保薫"
+    p track.lyricists           #=> ["つんく♂"]
+    p track.composers           #=> ["つんく♂"]
+    p track.arrangers           #=> ["大久保薫"]
+
+    # ハロプロ楽曲対象ランキング
     if track.hpma
       p track.hpma.year         #=> 2013
       p track.hpma.rank         #=> 2
       p track.hpma.votes        #=> 939
       p track.hpma.points       #=> 2343.5
     end
+
     p track.cover?              #=> false
     p track.remix?              #=> false
     p track.get_lyrics          #=> "世の中な　なんやかんや言うてもな (省略)"
@@ -109,6 +112,7 @@ Or install it yourself as:
 
     ## Discography infomation
 
+    all_single_albums    = sm.discography
     all_singles          = sm.discography {|e| e.single? }
     all_indies_singles   = sm.discography {|e| e.indies? and e.single? }
     all_major_singles    = sm.discography {|e| e.major? and e.single? }
@@ -133,6 +137,7 @@ Or install it yourself as:
                                        #     },
                                        #   ]
 
+    # オリコンセールス
     if album.oricon
       p album.oricon.first_week_sales  #=> 6199
       p album.oricon.total_sales       #=> 7091
