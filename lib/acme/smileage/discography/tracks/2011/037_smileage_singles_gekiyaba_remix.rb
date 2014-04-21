@@ -21,7 +21,7 @@ module Acme
             @itunes_links = [
               {
                 :title => "プリーズ ミニスカ ポストウーマン！",
-                :uri => "https://itunes.apple.com/jp/album/idid487508467",
+                :uri => "https://itunes.apple.com/jp/album/id487508467",
               },
             ]
           end
