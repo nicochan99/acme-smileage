@@ -14,6 +14,7 @@ module Acme
             @name = "オトナになるって難しい！！！"
             @name_romaji = "otona ni narutte muzukashii!!!"
             @nicknames = ["オトムズ", "オトむず"]
+            @duration = 186 # 03:06
             @arrangers = ["板垣祐介"]
             @hpma = HelloProjectMusicAward.new(2010, 29, 77.5, 48)
             @lyric_links = {

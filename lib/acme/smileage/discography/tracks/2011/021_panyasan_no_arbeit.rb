@@ -14,6 +14,7 @@ module Acme
             @name = "パン屋さんのアルバイト"
             @name_romaji = "panyasan no arbeit"
             @nicknames = ["パン屋"]
+            @duration = 264 # 04:24
             @arrangers = ["鈴木俊介"]
             @hpma = HelloProjectMusicAward.new(2011, 13, 229.5, 95)
             @lyric_links = {

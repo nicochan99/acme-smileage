@@ -14,6 +14,7 @@ module Acme
             @name = "ミステリーナイト！"
             @name_romaji = "mystery night!"
             @nicknames = ["ミスナイ"]
+            @duration = nil
             @arrangers = []
             @lyric_links = {
               :utamap => "",

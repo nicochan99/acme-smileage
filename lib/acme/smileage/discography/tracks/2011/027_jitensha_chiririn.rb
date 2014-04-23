@@ -14,6 +14,7 @@ module Acme
             @name = "自転車チリリン"
             @name_romaji = "jitensha chiririn"
             @nicknames = ["チリリン"]
+            @duration = 283 # 04:43
             @arrangers = ["藤澤慶昌"]
             @hpma = HelloProjectMusicAward.new(2011, 26, 111.5, 66)
             @lyric_links = {

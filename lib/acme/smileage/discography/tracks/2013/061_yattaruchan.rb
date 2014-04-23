@@ -14,6 +14,7 @@ module Acme
             @name = "ヤッタルチャン"
             @name_romaji = "yattaruchan"
             @nicknames = ["ヤッタル"]
+            @duration = 231 # 03:51
             @arrangers = ["大久保薫"]
             @hpma = HelloProjectMusicAward.new(2013, 2, 2343.5, 939)
             @lyric_links = {

@@ -14,6 +14,7 @@ module Acme
             @name = "○○ がんばらなくてもええねんで！！ (TopNude Remix Version 01)"
             @name_romaji = "gambaranakutemo eenende!! (topnude remix version 01)"
             @nicknames = []
+            @duration = 255 # 04:15
             @arrangers = ["高橋諭一"]
             @hpma = HelloProjectMusicAward.new(2010, 112, 5.0, 5)
             @lyric_links = {

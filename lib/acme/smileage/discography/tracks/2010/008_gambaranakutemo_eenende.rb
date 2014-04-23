@@ -14,6 +14,7 @@ module Acme
             @name = "○○ がんばらなくてもええねんで！！"
             @name_romaji = "gambaranakutemo eenende!!"
             @nicknames = ["がんばら"]
+            @duration = 255 # 04:15
             @arrangers = ["高橋諭一"]
             @hpma = HelloProjectMusicAward.new(2010, 35, 66.5, 39)
             @lyric_links = {

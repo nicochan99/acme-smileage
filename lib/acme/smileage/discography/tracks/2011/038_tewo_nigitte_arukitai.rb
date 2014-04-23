@@ -14,6 +14,7 @@ module Acme
             @name = "手を握って歩きたい"
             @name_romaji = "tewo nigitte arukitai"
             @nicknames = []
+            @duration = 266 # 04:26
             @arrangers = ["大久保薫"]
             @hpma = HelloProjectMusicAward.new(2012, 140, 3.0, 4)
             @lyric_links = {

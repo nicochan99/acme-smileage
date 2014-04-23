@@ -15,6 +15,7 @@ module Acme
             @lyricists = ["亜伊林"]
             @name_romaji = "thank you! creme brulee no yuujou"
             @nicknames = ["クレームブリュレ"]
+            @duration = 230 # 03:50
             @arrangers = ["高橋諭一"]
             @hpma = HelloProjectMusicAward.new(2010, 42, 49.0, 31)
             @lyric_links = {

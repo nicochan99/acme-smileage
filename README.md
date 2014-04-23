@@ -69,6 +69,7 @@ Or install it yourself as:
     p track.name                #=> "ヤッタルチャン"
     p track.name_romaji         #=> "yattaruchan"
     p track.nicknames           #=> ["ヤッタル"]
+    p track.duration            #=> 231
     p track.lyricists           #=> ["つんく♂"]
     p track.composers           #=> ["つんく♂"]
     p track.arrangers           #=> ["大久保薫"]

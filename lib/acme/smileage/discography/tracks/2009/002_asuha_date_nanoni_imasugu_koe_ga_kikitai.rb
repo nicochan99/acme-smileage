@@ -14,6 +14,7 @@ module Acme
             @name = "あすはデートなのに、今すぐ声が聞きたい"
             @name_romaji = "asuha date nanoni imasugu koe ga kikitai"
             @nicknames = ["あすデー"]
+            @duration = 265 # 04:25
             @arrangers = ["AKIRA"]
             @hpma = HelloProjectMusicAward.new(2009, 26, 107.5, 63)
             @lyric_links = {

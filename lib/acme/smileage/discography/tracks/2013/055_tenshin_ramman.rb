@@ -14,6 +14,7 @@ module Acme
             @name = "天真爛漫"
             @name_romaji = "tenshin ramman"
             @nicknames = []
+            @duration = 297 # 04:57
             @arrangers = ["大久保薫"]
             @hpma = HelloProjectMusicAward.new(2013, 32, 224.5, 148)
             @lyric_links = {

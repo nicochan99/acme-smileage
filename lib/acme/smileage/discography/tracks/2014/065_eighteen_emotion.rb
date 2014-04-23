@@ -14,6 +14,7 @@ module Acme
             @name = "エイティーン エモーション"
             @name_romaji = "eighteen emotion"
             @nicknames = ["エイエモ", "18エモ"]
+            @duration = nil
             @arrangers = []
             @lyric_links = {
               :utamap => "",
