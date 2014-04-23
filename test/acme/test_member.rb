@@ -22,6 +22,7 @@ class Acme::TestMember < Minitest::Test
     assert_equal "Yellow", rp.member_color
     assert_equal "Yellow", rp.color
     assert_equal "http://ameblo.jp/smileage-submember/", rp.blog_link
+    assert_equal ["@smileage_newmem"], rp.twitter_accounts
     assert_equal 2, rp.generation
     assert_equal Date.new(2011, 8, 14), rp.join_date
     assert_equal nil, rp.graduate_date

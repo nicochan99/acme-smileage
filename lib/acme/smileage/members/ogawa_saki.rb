@@ -21,6 +21,7 @@ module Acme
           @join_date = Date.new(2009, 4, 4)
           @graduate_date = Date.new(2011, 8, 27)
           @blog_link = nil
+          @twitter_accounts = []
         end
       end
     end

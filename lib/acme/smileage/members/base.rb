@@ -7,7 +7,7 @@ module Acme
         attr_reader :family_name_ja, :first_name_ja
         attr_reader :family_name_en, :first_name_en
         attr_reader :birthday, :blood_type, :hometown
-        attr_reader :emoticon, :nicknames, :member_color, :blog_link
+        attr_reader :emoticon, :nicknames, :member_color, :blog_link, :twitter_accounts
         attr_reader :generation, :join_date, :graduate_date
 
         alias :nick :nicknames      # compat for Acme::MomoiroClover
