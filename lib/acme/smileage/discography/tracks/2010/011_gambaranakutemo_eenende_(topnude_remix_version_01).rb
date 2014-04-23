@@ -25,7 +25,7 @@ module Acme
             @itunes_links = [
               {
                 :title => "○○ がんばらなくてもええねんで！！ (TopNude Remix Version 01)",
-                :uri => "https://itunes.apple.com/jp/album/id385082027",
+                :link => "https://itunes.apple.com/jp/album/id385082027",
               },
             ]
           end

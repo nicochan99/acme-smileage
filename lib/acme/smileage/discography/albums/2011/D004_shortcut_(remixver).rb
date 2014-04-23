@@ -19,7 +19,7 @@ module Acme
             @artwork_links = [
               {
                 :title => "ショートカット (Remix.Ver)",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/082/110823-1839_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/082/110823-1839_01l.jpg",
               },
             ]
 

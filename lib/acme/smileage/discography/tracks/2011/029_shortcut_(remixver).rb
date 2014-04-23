@@ -24,7 +24,7 @@ module Acme
             @itunes_links = [
               {
                 :title => "ショートカット (Remix.Ver)",
-                :uri => "https://itunes.apple.com/jp/album/id457769698",
+                :link => "https://itunes.apple.com/jp/album/id457769698",
               },
             ]
           end

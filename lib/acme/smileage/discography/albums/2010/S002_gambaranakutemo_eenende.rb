@@ -19,19 +19,19 @@ module Acme
             @artwork_links = [
               {
                 :title => "○○ がんばらなくてもええねんで！！ 【通常盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_01l.jpg",
               },
               {
                 :title => "○○ がんばらなくてもええねんで！！ 【初回生産限定盤A】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_02l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_02l.jpg",
               },
               {
                 :title => "○○ がんばらなくてもええねんで！！ 【初回生産限定盤B】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_03l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_03l.jpg",
               },
               {
                 :title => "○○ がんばらなくてもええねんで！！ 【初回生産限定盤C】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_04l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/021/100922-1203_04l.jpg",
               },
             ]
 

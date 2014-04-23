@@ -19,11 +19,11 @@ module Acme
             @artwork_links = [
               {
                 :title => "スマイレージ ベストアルバム完全版① 【通常盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/114/120502-2111_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/114/120502-2111_01l.jpg",
               },
               {
                 :title => "スマイレージ ベストアルバム完全版① 【初回生産限定盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/114/120502-2111_02l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/114/120502-2111_02l.jpg",
               },
             ]
 

@@ -23,7 +23,7 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ『エイティーン エモーション』 (S/mileage[Eighteen Emotion]) (Promotion edit)",
-                :uri => "https://www.youtube.com/watch?v=fAPI8PW2q-A",
+                :link => "https://www.youtube.com/watch?v=fAPI8PW2q-A",
               },
             ]
             @itunes_links = []

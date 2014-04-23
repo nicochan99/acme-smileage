@@ -24,17 +24,17 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 『プリーズ ミニスカ ポストウーマン！』 (MV）",
-                :uri => "https://www.youtube.com/watch?v=EOUi6tndJT0",
+                :link => "https://www.youtube.com/watch?v=EOUi6tndJT0",
               },
             ]
             @itunes_links = [
               {
                 :title => "プリーズ ミニスカ ポストウーマン！",
-                :uri => "https://itunes.apple.com/jp/album/id487501137",
+                :link => "https://itunes.apple.com/jp/album/id487501137",
               },
               {
                 :title => "スマイレージ ベストアルバム完全版①",
-                :uri => "https://itunes.apple.com/jp/album/id528168545",
+                :link => "https://itunes.apple.com/jp/album/id528168545",
               },
             ]
           end

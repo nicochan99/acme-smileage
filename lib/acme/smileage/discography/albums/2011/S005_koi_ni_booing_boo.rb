@@ -19,23 +19,23 @@ module Acme
             @artwork_links = [
               {
                 :title => "恋にBooing ブー！ 【通常盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/068/110331-2058_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/068/110331-2058_01l.jpg",
               },
               {
                 :title => "恋にBooing ブー！ 【初回生産限定盤A】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/068/110331-2058_02l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/068/110331-2058_02l.jpg",
               },
               {
                 :title => "恋にBooing ブー！ 【初回生産限定盤B】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/068/110331-2058_03l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/068/110331-2058_03l.jpg",
               },
               {
                 :title => "恋にBooing ブー！ 【初回生産限定盤C】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/068/110331-2058_04l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/068/110331-2058_04l.jpg",
               },
               {
                 :title => "恋にBooing ブー！ 【初回生産限定盤D】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/068/110331-2058_05l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/068/110331-2058_05l.jpg",
               },
             ]
 

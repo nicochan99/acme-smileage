@@ -19,23 +19,23 @@ module Acme
             @artwork_links = [
               {
                 :title => "ドットビキニ 【通常盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/109/120405-2112_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/109/120405-2112_01l.jpg",
               },
               {
                 :title => "ドットビキニ 【初回生産限定盤A】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/109/120405-2112_02l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/109/120405-2112_02l.jpg",
               },
               {
                 :title => "ドットビキニ 【初回生産限定盤B】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/109/120405-2112_03l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/109/120405-2112_03l.jpg",
               },
               {
                 :title => "ドットビキニ 【初回生産限定盤C】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/109/120405-2112_04l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/109/120405-2112_04l.jpg",
               },
               {
                 :title => "ドットビキニ 【初回生産限定盤D】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/109/120405-2112_05l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/109/120405-2112_05l.jpg",
               },
             ]
 

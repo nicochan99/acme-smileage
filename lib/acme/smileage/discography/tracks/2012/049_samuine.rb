@@ -24,21 +24,21 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 「寒いね。」 (MV)",
-                :uri => "https://www.youtube.com/watch?v=ZxFhVH2tNzc",
+                :link => "https://www.youtube.com/watch?v=ZxFhVH2tNzc",
               },
               {
                 :title => "スマイレージ 「寒いね。」 (Live Ver.)",
-                :uri => "https://www.youtube.com/watch?v=VDFAXMSSt2o",
+                :link => "https://www.youtube.com/watch?v=VDFAXMSSt2o",
               },
             ]
             @itunes_links = [
               {
                 :title => "寒いね。",
-                :uri => "https://itunes.apple.com/jp/album/id576697867",
+                :link => "https://itunes.apple.com/jp/album/id576697867",
               },
               {
                 :title => "②スマイルセンセーション",
-                :uri => "https://itunes.apple.com/jp/album/id643254704",
+                :link => "https://itunes.apple.com/jp/album/id643254704",
               },
             ]
           end

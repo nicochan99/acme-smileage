@@ -19,7 +19,7 @@ module Acme
             @artwork_links = [
               {
                 :title => "有頂天LOVE ～rocketman mix～",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/081/110823-1838_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/081/110823-1838_01l.jpg",
               },
             ]
 

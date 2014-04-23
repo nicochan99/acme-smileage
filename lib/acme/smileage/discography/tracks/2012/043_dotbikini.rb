@@ -24,17 +24,17 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 『ドットビキニ』 (MV)",
-                :uri => "https://www.youtube.com/watch?v=uhUFrJSDqrU",
+                :link => "https://www.youtube.com/watch?v=uhUFrJSDqrU",
               },
             ]
             @itunes_links = [
               {
                 :title => "ドットビキニ",
-                :uri => "https://itunes.apple.com/jp/album/id518280736",
+                :link => "https://itunes.apple.com/jp/album/id518280736",
               },
               {
                 :title => "スマイレージ ベストアルバム完全版①",
-                :uri => "https://itunes.apple.com/jp/album/id528168545",
+                :link => "https://itunes.apple.com/jp/album/id528168545",
               },
             ]
           end

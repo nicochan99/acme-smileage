@@ -24,7 +24,7 @@ module Acme
             @itunes_links = [
               {
                 :title => "タチアガール",
-                :uri => "https://itunes.apple.com/jp/album/id464722574",
+                :link => "https://itunes.apple.com/jp/album/id464722574",
               },
             ]
           end

@@ -24,17 +24,17 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 「旅立ちの春が来た」 (MV)",
-                :uri => "https://www.youtube.com/watch?v=Xe1IOiDlwtc",
+                :link => "https://www.youtube.com/watch?v=Xe1IOiDlwtc",
               },
             ]
             @itunes_links = [
               {
                 :title => "旅立ちの春が来た",
-                :uri => "https://itunes.apple.com/jp/album/id611090467",
+                :link => "https://itunes.apple.com/jp/album/id611090467",
               },
               {
                 :title => "②スマイルセンセーション",
-                :uri => "https://itunes.apple.com/jp/album/id643254704",
+                :link => "https://itunes.apple.com/jp/album/id643254704",
               },
             ]
           end

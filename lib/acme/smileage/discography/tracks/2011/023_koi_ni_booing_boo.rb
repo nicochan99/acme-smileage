@@ -24,41 +24,41 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 『恋にBooing ブー！』 (MV)",
-                :uri => "https://www.youtube.com/watch?v=khFjQDiCKE4",
+                :link => "https://www.youtube.com/watch?v=khFjQDiCKE4",
               },
               {
                 :title => "スマイレージ 『恋にBooing ブー！』 (Dance Shot Ver.)",
-                :uri => "https://www.youtube.com/watch?v=W-iE21ANDJQ",
+                :link => "https://www.youtube.com/watch?v=W-iE21ANDJQ",
               },
               {
                 :title => "スマイレージ 『恋にBooing ブー！』 (Boo Ver.)",
-                :uri => "https://www.youtube.com/watch?v=d6iixBrklNY",
+                :link => "https://www.youtube.com/watch?v=d6iixBrklNY",
               },
               {
                 :title => "スマイレージ 『恋にBooing ブー！』 (Black Ver.)",
-                :uri => "https://www.youtube.com/watch?v=PdxQgiU4Kj8",
+                :link => "https://www.youtube.com/watch?v=PdxQgiU4Kj8",
               },
               {
                 :title => "スマイレージ 『恋にBooing ブー！』 (Dance &amp; Image Ver.)",
-                :uri => "https://www.youtube.com/watch?v=nv8wcsF483Q",
+                :link => "https://www.youtube.com/watch?v=nv8wcsF483Q",
               },
               {
                 :title => "スマイレージ 『恋にBooing ブー！』 (和田彩花 Close-up Ver.)",
-                :uri => "https://www.youtube.com/watch?v=Dd26kQUZ6QA",
+                :link => "https://www.youtube.com/watch?v=Dd26kQUZ6QA",
               },
               {
                 :title => "スマイレージ 『恋にBooing ブー！』 (福田花音 Close-up Ver.)",
-                :uri => "https://www.youtube.com/watch?v=Wyc7V5o10sA",
+                :link => "https://www.youtube.com/watch?v=Wyc7V5o10sA",
               },
             ]
             @itunes_links = [
               {
                 :title => "恋にBooing ブー！",
-                :uri => "https://itunes.apple.com/jp/album/id429866286",
+                :link => "https://itunes.apple.com/jp/album/id429866286",
               },
               {
                 :title => "スマイレージ ベストアルバム完全版①",
-                :uri => "https://itunes.apple.com/jp/album/id528168545",
+                :link => "https://itunes.apple.com/jp/album/id528168545",
               },
             ]
           end

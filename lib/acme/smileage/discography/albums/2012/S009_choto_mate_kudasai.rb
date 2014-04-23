@@ -19,23 +19,23 @@ module Acme
             @artwork_links = [
               {
                 :title => "チョトマテクダサイ！ 【通常盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/101/120111-1343_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/101/120111-1343_01l.jpg",
               },
               {
                 :title => "チョトマテクダサイ！ 【初回生産限定盤A】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/101/120111-1343_02l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/101/120111-1343_02l.jpg",
               },
               {
                 :title => "チョトマテクダサイ！ 【初回生産限定盤B】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/101/120111-1343_03l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/101/120111-1343_03l.jpg",
               },
               {
                 :title => "チョトマテクダサイ！ 【初回生産限定盤C】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/101/120111-1343_04l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/101/120111-1343_04l.jpg",
               },
               {
                 :title => "チョトマテクダサイ！ 【初回生産限定盤D】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/101/120111-1343_05l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/101/120111-1343_05l.jpg",
               },
             ]
 

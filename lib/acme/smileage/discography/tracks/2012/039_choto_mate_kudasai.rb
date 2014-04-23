@@ -24,17 +24,17 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 『チョトマテクダサイ！』 (MV)",
-                :uri => "https://www.youtube.com/watch?v=OVwsVKzgR_Y",
+                :link => "https://www.youtube.com/watch?v=OVwsVKzgR_Y",
               },
             ]
             @itunes_links = [
               {
                 :title => "チョトマテクダサイ！",
-                :uri => "https://itunes.apple.com/jp/album/id496149565",
+                :link => "https://itunes.apple.com/jp/album/id496149565",
               },
               {
                 :title => "スマイレージ ベストアルバム完全版①",
-                :uri => "https://itunes.apple.com/jp/album/id528168545",
+                :link => "https://itunes.apple.com/jp/album/id528168545",
               },
             ]
           end

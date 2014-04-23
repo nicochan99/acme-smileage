@@ -24,29 +24,29 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 「スキちゃん」 (MV)",
-                :uri => "https://www.youtube.com/watch?v=TuTO6edKwLU",
+                :link => "https://www.youtube.com/watch?v=TuTO6edKwLU",
               },
               {
                 :title => "スマイレージ 「スキちゃん」 (Dance Shot Ver.)",
-                :uri => "https://www.youtube.com/watch?v=YzotAomnYa0",
+                :link => "https://www.youtube.com/watch?v=YzotAomnYa0",
               },
               {
                 :title => "スマイレージ 「スキちゃん」 (Close-up Ver.)",
-                :uri => "https://www.youtube.com/watch?v=EHAp-v83Ulo",
+                :link => "https://www.youtube.com/watch?v=EHAp-v83Ulo",
               },
             ]
             @itunes_links = [
               {
                 :title => "スキちゃん",
-                :uri => "https://itunes.apple.com/jp/album/id349411000",
+                :link => "https://itunes.apple.com/jp/album/id349411000",
               },
               {
                 :title => "悪ガキッ①",
-                :uri => "https://itunes.apple.com/jp/album/id403700742",
+                :link => "https://itunes.apple.com/jp/album/id403700742",
               },
               {
                 :title => "スマイレージ ベストアルバム完全版①",
-                :uri => "https://itunes.apple.com/jp/album/id528168545",
+                :link => "https://itunes.apple.com/jp/album/id528168545",
               },
             ]
           end

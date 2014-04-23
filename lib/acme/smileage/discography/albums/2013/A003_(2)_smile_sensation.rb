@@ -19,11 +19,11 @@ module Acme
             @artwork_links = [
               {
                 :title => "②スマイルセンセーション 【通常盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/146/130425-1954_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/146/130425-1954_01l.jpg",
               },
               {
                 :title => "②スマイルセンセーション 【初回生産限定盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/146/130425-1954_02l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/146/130425-1954_02l.jpg",
               },
             ]
 

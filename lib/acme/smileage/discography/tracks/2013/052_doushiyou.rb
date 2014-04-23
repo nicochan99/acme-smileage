@@ -25,7 +25,7 @@ module Acme
             @itunes_links = [
               {
                 :title => "旅立ちの春が来た",
-                :uri => "https://itunes.apple.com/jp/album/id611090467",
+                :link => "https://itunes.apple.com/jp/album/id611090467",
               },
             ]
           end

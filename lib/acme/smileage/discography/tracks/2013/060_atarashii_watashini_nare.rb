@@ -24,17 +24,17 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 『新しい私になれ！』(S/mileage[Be the new me!]) (MV)",
-                :uri => "https://www.youtube.com/watch?v=yCttQlnRcOU",
+                :link => "https://www.youtube.com/watch?v=yCttQlnRcOU",
               },
               {
                 :title => "スマイレージ 『新しい私になれ！』(S/mileage[Be the new me!]) (Dance Shot Ver.)",
-                :uri => "https://www.youtube.com/watch?v=vgyLXQr49BA",
+                :link => "https://www.youtube.com/watch?v=vgyLXQr49BA",
               },
             ]
             @itunes_links = [
               {
                 :title => "新しい私になれ！／ヤッタルチャン",
-                :uri => "https://itunes.apple.com/jp/album/id663131682",
+                :link => "https://itunes.apple.com/jp/album/id663131682",
               },
             ]
           end

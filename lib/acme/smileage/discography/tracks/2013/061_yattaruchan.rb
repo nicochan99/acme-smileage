@@ -24,17 +24,17 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 『ヤッタルチャン』(S/mileage[Yattaruchan]) (MV)",
-                :uri => "https://www.youtube.com/watch?v=emiJ1iGih6U",
+                :link => "https://www.youtube.com/watch?v=emiJ1iGih6U",
               },
               {
                 :title => "スマイレージ 『ヤッタルチャン』(S/mileage[Yattaruchan]) (Dance Shot Ver.)",
-                :uri => "https://www.youtube.com/watch?v=fwpjnUSvyKk",
+                :link => "https://www.youtube.com/watch?v=fwpjnUSvyKk",
               },
             ]
             @itunes_links = [
               {
                 :title => "新しい私になれ！／ヤッタルチャン",
-                :uri => "https://itunes.apple.com/jp/album/id663131682",
+                :link => "https://itunes.apple.com/jp/album/id663131682",
               },
             ]
           end

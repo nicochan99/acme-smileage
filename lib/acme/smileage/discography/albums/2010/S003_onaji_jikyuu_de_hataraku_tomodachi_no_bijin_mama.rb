@@ -19,19 +19,19 @@ module Acme
             @artwork_links = [
               {
                 :title => "同じ時給で働く友達の美人ママ 【通常盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/039/100922-1154_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/039/100922-1154_01l.jpg",
               },
               {
                 :title => "同じ時給で働く友達の美人ママ 【初回生産限定盤A】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/039/100922-1154_02l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/039/100922-1154_02l.jpg",
               },
               {
                 :title => "同じ時給で働く友達の美人ママ 【初回生産限定盤B】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/039/100922-1154_03l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/039/100922-1154_03l.jpg",
               },
               {
                 :title => "同じ時給で働く友達の美人ママ 【初回生産限定盤C】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/039/100922-1154_04l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/039/100922-1154_04l.jpg",
               },
             ]
 

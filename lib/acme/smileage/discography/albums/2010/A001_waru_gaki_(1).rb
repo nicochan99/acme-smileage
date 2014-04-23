@@ -19,11 +19,11 @@ module Acme
             @artwork_links = [
               {
                 :title => "悪ガキッ① 【通常盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/047/101118-1624_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/047/101118-1624_01l.jpg",
               },
               {
                 :title => "悪ガキッ① 【初回生産限定盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/047/101118-1624_02l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/047/101118-1624_02l.jpg",
               },
             ]
 

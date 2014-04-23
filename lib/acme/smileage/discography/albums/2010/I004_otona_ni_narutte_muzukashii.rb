@@ -19,7 +19,7 @@ module Acme
             @artwork_links = [
               {
                 :title => "オトナになるって難しい！！！",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/014/100922-1208_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/014/100922-1208_01l.jpg",
               },
             ]
 

@@ -19,23 +19,23 @@ module Acme
             @artwork_links = [
               {
                 :title => "新しい私になれ！／ヤッタルチャン 【通常盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/149/130613-1235_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/149/130613-1235_01l.jpg",
               },
               {
                 :title => "新しい私になれ！／ヤッタルチャン 【初回生産限定盤A】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/149/130613-1235_02l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/149/130613-1235_02l.jpg",
               },
               {
                 :title => "新しい私になれ！／ヤッタルチャン 【初回生産限定盤B】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/149/130613-1235_03l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/149/130613-1235_03l.jpg",
               },
               {
                 :title => "新しい私になれ！／ヤッタルチャン 【初回生産限定盤C】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/149/130613-1235_04l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/149/130613-1235_04l.jpg",
               },
               {
                 :title => "新しい私になれ！／ヤッタルチャン 【初回生産限定盤D】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/149/130613-1235_05l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/149/130613-1235_05l.jpg",
               },
             ]
 

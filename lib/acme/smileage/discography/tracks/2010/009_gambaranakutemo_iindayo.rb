@@ -23,17 +23,17 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 「○○ がんばらなくてもいいんだよ！！」 (MV)",
-                :uri => "https://www.youtube.com/watch?v=FAHiyJj_1w4",
+                :link => "https://www.youtube.com/watch?v=FAHiyJj_1w4",
               },
               {
                 :title => "スマイレージ 「○○ がんばらなくてもいいんだよ！！」 (Close-up Ver.)",
-                :uri => "https://www.youtube.com/watch?v=QtWKqgKE-jU",
+                :link => "https://www.youtube.com/watch?v=QtWKqgKE-jU",
               },
             ]
             @itunes_links = [
               {
                 :title => "○○ がんばらなくてもええねんで！！",
-                :uri => "https://itunes.apple.com/jp/album/id382386730",
+                :link => "https://itunes.apple.com/jp/album/id382386730",
               },
             ]
           end

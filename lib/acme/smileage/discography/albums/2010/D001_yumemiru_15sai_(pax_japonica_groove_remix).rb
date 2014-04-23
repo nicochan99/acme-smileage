@@ -19,7 +19,7 @@ module Acme
             @artwork_links = [
               {
                 :title => "夢見る 15歳 (PAX JAPONICA GROOVE REMIX)",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/032/100709-1334_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/032/100709-1334_01l.jpg",
               },
             ]
 

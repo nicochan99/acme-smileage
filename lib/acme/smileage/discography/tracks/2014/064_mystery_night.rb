@@ -23,7 +23,7 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 『ミステリーナイト！』 (S/mileage[A Mistery Night!]) (Promotion edit)",
-                :uri => "https://www.youtube.com/watch?v=gh6-f1EV_14",
+                :link => "https://www.youtube.com/watch?v=gh6-f1EV_14",
               },
             ]
             @itunes_links = []

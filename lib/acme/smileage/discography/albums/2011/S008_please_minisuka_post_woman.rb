@@ -19,23 +19,23 @@ module Acme
             @artwork_links = [
               {
                 :title => "プリーズ ミニスカ ポストウーマン！ 【通常盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/091/111205-1231_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/091/111205-1231_01l.jpg",
               },
               {
                 :title => "プリーズ ミニスカ ポストウーマン！ 【初回生産限定盤A】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/091/111205-1231_02l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/091/111205-1231_02l.jpg",
               },
               {
                 :title => "プリーズ ミニスカ ポストウーマン！ 【初回生産限定盤B】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/091/111205-1231_03l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/091/111205-1231_03l.jpg",
               },
               {
                 :title => "プリーズ ミニスカ ポストウーマン！ 【初回生産限定盤C】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/091/111205-1231_04l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/091/111205-1231_04l.jpg",
               },
               {
                 :title => "プリーズ ミニスカ ポストウーマン！ 【初回生産限定盤D】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/091/111205-1231_05l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/091/111205-1231_05l.jpg",
               },
             ]
 

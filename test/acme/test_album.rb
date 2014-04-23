@@ -17,15 +17,15 @@ class Acme::TestAlbum < Minitest::Test
     artwork_links = [
       {
         :title => "夢見る 15歳 【通常盤】",
-        :uri => "http://s-mileage.jp/discography/obj/img/000/009/100517-1512_01l.jpg",
+        :link => "http://s-mileage.jp/discography/obj/img/000/009/100517-1512_01l.jpg",
       },
       {
         :title => "夢見る 15歳 【初回生産限定盤A】",
-        :uri => "http://s-mileage.jp/discography/obj/img/000/009/100517-1512_02l.jpg",
+        :link => "http://s-mileage.jp/discography/obj/img/000/009/100517-1512_02l.jpg",
       },
       {
         :title => "夢見る 15歳 【初回生産限定盤B】",
-        :uri => "http://s-mileage.jp/discography/obj/img/000/009/100517-1512_03l.jpg",
+        :link => "http://s-mileage.jp/discography/obj/img/000/009/100517-1512_03l.jpg",
       },
     ]
     assert_equal artwork_links, a.artwork_links
@@ -55,7 +55,7 @@ class Acme::TestAlbum < Minitest::Test
     artwork_links = [
       {
         :title => "ぁまのじゃく",
-        :uri => "http://s-mileage.jp/discography/obj/img/000/012/100922-1209_01l.jpg",
+        :link => "http://s-mileage.jp/discography/obj/img/000/012/100922-1209_01l.jpg",
       },
     ]
     assert_equal artwork_links, a.artwork_links
@@ -83,7 +83,7 @@ class Acme::TestAlbum < Minitest::Test
     artwork_links = [
       {
         :title => "夢見る 15歳 (PAX JAPONICA GROOVE REMIX)",
-        :uri => "http://s-mileage.jp/discography/obj/img/000/032/100709-1334_01l.jpg",
+        :link => "http://s-mileage.jp/discography/obj/img/000/032/100709-1334_01l.jpg",
       },
     ]
     assert_equal artwork_links, a.artwork_links
@@ -113,11 +113,11 @@ class Acme::TestAlbum < Minitest::Test
     artwork_links = [
       {
         :title => "悪ガキッ① 【通常盤】",
-        :uri => "http://s-mileage.jp/discography/obj/img/000/047/101118-1624_01l.jpg",
+        :link => "http://s-mileage.jp/discography/obj/img/000/047/101118-1624_01l.jpg",
       },
       {
         :title => "悪ガキッ① 【初回生産限定盤】",
-        :uri => "http://s-mileage.jp/discography/obj/img/000/047/101118-1624_02l.jpg",
+        :link => "http://s-mileage.jp/discography/obj/img/000/047/101118-1624_02l.jpg",
       },
     ]
     assert_equal artwork_links, a.artwork_links
@@ -158,11 +158,11 @@ class Acme::TestAlbum < Minitest::Test
     artwork_links = [
       {
         :title => "スマイレージ ベストアルバム完全版① 【通常盤】",
-        :uri => "http://s-mileage.jp/discography/obj/img/000/114/120502-2111_01l.jpg",
+        :link => "http://s-mileage.jp/discography/obj/img/000/114/120502-2111_01l.jpg",
       },
       {
         :title => "スマイレージ ベストアルバム完全版① 【初回生産限定盤】",
-        :uri => "http://s-mileage.jp/discography/obj/img/000/114/120502-2111_02l.jpg",
+        :link => "http://s-mileage.jp/discography/obj/img/000/114/120502-2111_02l.jpg",
       },
     ]
     assert_equal artwork_links, a.artwork_links

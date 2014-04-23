@@ -26,7 +26,7 @@ module Acme
             @itunes_links = [
               {
                 :title => "夢見る 15歳",
-                :uri => "https://itunes.apple.com/jp/album/id372351545",
+                :link => "https://itunes.apple.com/jp/album/id372351545",
               },
             ]
           end

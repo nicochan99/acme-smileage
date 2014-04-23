@@ -19,7 +19,7 @@ module Acme
             @artwork_links = [
               {
                 :title => "ぁまのじゃく",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/012/100922-1209_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/012/100922-1209_01l.jpg",
               },
             ]
 

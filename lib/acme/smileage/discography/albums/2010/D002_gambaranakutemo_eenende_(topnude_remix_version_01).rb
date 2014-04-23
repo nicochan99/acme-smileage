@@ -19,7 +19,7 @@ module Acme
             @artwork_links = [
               {
                 :title => "○○ がんばらなくてもええねんで！！ (TopNude Remix Version 01)",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/037/100806-1845_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/037/100806-1845_01l.jpg",
               },
             ]
 

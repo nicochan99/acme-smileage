@@ -25,7 +25,7 @@ module Acme
             @itunes_links = [
               {
                 :title => "同じ時給で働く友達の美人ママ",
-                :uri => "https://itunes.apple.com/jp/album/id390851470",
+                :link => "https://itunes.apple.com/jp/album/id390851470",
               },
             ]
           end

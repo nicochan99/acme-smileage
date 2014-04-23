@@ -24,17 +24,17 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 「好きよ、純情反抗期。」 (MV)",
-                :uri => "https://www.youtube.com/watch?v=5kPe_AEC3h8",
+                :link => "https://www.youtube.com/watch?v=5kPe_AEC3h8",
               },
             ]
             @itunes_links = [
               {
                 :title => "好きよ、純情反抗期。",
-                :uri => "https://itunes.apple.com/jp/album/id549806077",
+                :link => "https://itunes.apple.com/jp/album/id549806077",
               },
               {
                 :title => "②スマイルセンセーション",
-                :uri => "https://itunes.apple.com/jp/album/id643254704",
+                :link => "https://itunes.apple.com/jp/album/id643254704",
               },
             ]
           end

@@ -25,7 +25,7 @@ module Acme
             @itunes_links = [
               {
                 :title => "好きよ、純情反抗期。",
-                :uri => "https://itunes.apple.com/jp/album/id549806077",
+                :link => "https://itunes.apple.com/jp/album/id549806077",
               },
             ]
           end

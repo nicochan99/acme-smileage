@@ -16,7 +16,7 @@ class Acme::TestTrack < Minitest::Test
     assert_equal ["つんく♂"], a.composers
     assert_equal ["高橋諭一"], a.arrangers
     assert_equal [], a.youtube_links
-    assert_equal [{:title => "夢見る 15歳", :uri => "https://itunes.apple.com/jp/album/id372351545"}], a.itunes_links
+    assert_equal [{:title => "夢見る 15歳", :link => "https://itunes.apple.com/jp/album/id372351545"}], a.itunes_links
     assert_equal false, a.cover?
     assert_equal false, a.remix?
     assert_equal [2010, 42, 49.0, 31], a.hpma.to_a
@@ -32,7 +32,7 @@ class Acme::TestTrack < Minitest::Test
     assert_equal ["ちょこラブ", "ちょこLOVE"], a.nicknames
     assert_equal ["鈴木俊介"], a.arrangers
     assert_equal [], a.youtube_links
-    assert_equal [{:title => "同じ時給で働く友達の美人ママ", :uri => "https://itunes.apple.com/jp/album/id390851470"}], a.itunes_links
+    assert_equal [{:title => "同じ時給で働く友達の美人ママ", :link => "https://itunes.apple.com/jp/album/id390851470"}], a.itunes_links
     assert_equal true, a.cover?
     assert_equal false, a.remix?
     assert_equal [2010, 121, 4.0, 3], a.hpma.to_a
@@ -48,7 +48,7 @@ class Acme::TestTrack < Minitest::Test
     assert_equal [], a.nicknames
     assert_equal ["田中直"], a.arrangers
     assert_equal [], a.youtube_links
-    assert_equal [{:title => "タチアガール", :uri => "https://itunes.apple.com/jp/album/id464723016"}], a.itunes_links
+    assert_equal [{:title => "タチアガール", :link => "https://itunes.apple.com/jp/album/id464723016"}], a.itunes_links
     assert_equal false, a.cover?
     assert_equal true, a.remix?
     assert_equal [2011, 121, 4.5, 3], a.hpma.to_a

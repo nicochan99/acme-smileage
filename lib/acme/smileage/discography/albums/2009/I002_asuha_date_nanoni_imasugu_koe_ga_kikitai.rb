@@ -19,7 +19,7 @@ module Acme
             @artwork_links = [
               {
                 :title => "あすはデートなのに、今すぐ声が聞きたい",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/005/100922-1211_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/005/100922-1211_01l.jpg",
               },
             ]
 

@@ -19,27 +19,27 @@ module Acme
             @artwork_links = [
               {
                 :title => "タチアガール 【通常盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_01l.jpg",
               },
               {
                 :title => "タチアガール 【初回生産限定盤A】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_02l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_02l.jpg",
               },
               {
                 :title => "タチアガール 【初回生産限定盤B】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_03l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_03l.jpg",
               },
               {
                 :title => "タチアガール 【初回生産限定盤C】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_04l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_04l.jpg",
               },
               {
                 :title => "タチアガール 【初回生産限定盤D】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_05l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_05l.jpg",
               },
               {
                 :title => "タチアガール 【初回生産限定盤E】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_06l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/080/110906-1628_06l.jpg",
               },
             ]
 

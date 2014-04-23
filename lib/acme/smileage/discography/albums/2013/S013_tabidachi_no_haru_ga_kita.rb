@@ -19,23 +19,23 @@ module Acme
             @artwork_links = [
               {
                 :title => "旅立ちの春が来た 【通常盤】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/138/130227-1335_01l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/138/130227-1335_01l.jpg",
               },
               {
                 :title => "旅立ちの春が来た 【初回生産限定盤A】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/138/130227-1335_02l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/138/130227-1335_02l.jpg",
               },
               {
                 :title => "旅立ちの春が来た 【初回生産限定盤B】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/138/130227-1335_03l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/138/130227-1335_03l.jpg",
               },
               {
                 :title => "旅立ちの春が来た 【初回生産限定盤C】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/138/130227-1335_04l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/138/130227-1335_04l.jpg",
               },
               {
                 :title => "旅立ちの春が来た 【初回生産限定盤D】",
-                :uri => "http://s-mileage.jp/discography/obj/img/000/138/130227-1335_05l.jpg",
+                :link => "http://s-mileage.jp/discography/obj/img/000/138/130227-1335_05l.jpg",
               },
             ]
 

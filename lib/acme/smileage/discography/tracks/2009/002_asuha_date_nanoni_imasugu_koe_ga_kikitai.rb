@@ -24,29 +24,29 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 「あすはデートなのに、今すぐ声が聞きたい」 (MV)",
-                :uri => "https://www.youtube.com/watch?v=CYMW2EBjb8c",
+                :link => "https://www.youtube.com/watch?v=CYMW2EBjb8c",
               },
               {
                 :title => "スマイレージ 「あすはデートなのに、今すぐ声が聞きたい」 (Dance Shot Ver.)",
-                :uri => "https://www.youtube.com/watch?v=XD7dNcacyig",
+                :link => "https://www.youtube.com/watch?v=XD7dNcacyig",
               },
               {
                 :title => "スマイレージ 「あすはデートなのに、今すぐ声が聞きたい」 (Close-up Ver.)",
-                :uri => "https://www.youtube.com/watch?v=uMAvtxu0Sz8",
+                :link => "https://www.youtube.com/watch?v=uMAvtxu0Sz8",
               },
             ]
             @itunes_links = [
               {
                 :title => "あすはデートなのに、今すぐ声が聞きたい",
-                :uri => "https://itunes.apple.com/jp/album/id348593533",
+                :link => "https://itunes.apple.com/jp/album/id348593533",
               },
               {
                 :title => "悪ガキッ①",
-                :uri => "https://itunes.apple.com/jp/album/id403700742",
+                :link => "https://itunes.apple.com/jp/album/id403700742",
               },
               {
                 :title => "スマイレージ ベストアルバム完全版①",
-                :uri => "https://itunes.apple.com/jp/album/id528168545",
+                :link => "https://itunes.apple.com/jp/album/id528168545",
               },
             ]
           end

@@ -24,29 +24,29 @@ module Acme
             @youtube_links = [
               {
                 :title => "スマイレージ 「オトナになるって難しい！！！」 (MV)",
-                :uri => "https://www.youtube.com/watch?v=LNpIGK_klbA",
+                :link => "https://www.youtube.com/watch?v=LNpIGK_klbA",
               },
               {
                 :title => "スマイレージ 「オトナになるって難しい！！！」 (Dance Shot Ver.)",
-                :uri => "https://www.youtube.com/watch?v=-WaavRLtAqI",
+                :link => "https://www.youtube.com/watch?v=-WaavRLtAqI",
               },
               {
                 :title => "スマイレージ 「オトナになるって難しい！！！」 (Close-up Ver.)",
-                :uri => "https://www.youtube.com/watch?v=_gs6j31SGbw",
+                :link => "https://www.youtube.com/watch?v=_gs6j31SGbw",
               },
             ]
             @itunes_links = [
               {
                 :title => "オトナになるって難しい！！！",
-                :uri => "https://itunes.apple.com/jp/album/id366438599",
+                :link => "https://itunes.apple.com/jp/album/id366438599",
               },
               {
                 :title => "悪ガキッ①",
-                :uri => "https://itunes.apple.com/jp/album/id403700742",
+                :link => "https://itunes.apple.com/jp/album/id403700742",
               },
               {
                 :title => "スマイレージ ベストアルバム完全版①",
-                :uri => "https://itunes.apple.com/jp/album/id528168545",
+                :link => "https://itunes.apple.com/jp/album/id528168545",
               },
             ]
           end
