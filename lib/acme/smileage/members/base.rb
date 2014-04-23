@@ -1,5 +1,7 @@
 require "date"
 
+require "acme/smileage/downloader/ameblo"
+
 module Acme
   class Smileage
     class Members
@@ -43,6 +45,19 @@ module Acme
 
           date ||= Date.today
           self.graduate_date < date
+        end
+
+        def get_blog_entry_list(page=1)
+          return [] unless self.blog_link
+
+          r = Acme::Smileage::Downloader::Ameblo.new.get(self.blog_link, page)
+
+          # 2 期ブログは共同なので author でフィルタ
+          if self.generation > 1 and not r[:entries].empty?
+            r[:entries] = r[:entries].select {|e| e[:author] == self.family_name_en }
+          end
+
+          r
         end
       end
     end

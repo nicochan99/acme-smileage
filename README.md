@@ -58,6 +58,19 @@ Or install it yourself as:
     p member.graduated?                        #=> false
     p member.graduated?(Date.new(2010, 1, 1))  #=> false
 
+    p member.get_blog_entry_list               #=> {
+                                               #     :link => "http://ameblo.jp/smileage-submember/entrylist-1.html",
+                                               #     :next_page => 2,
+                                               #     :entries => [
+                                               #       {
+                                               #         :link => "http://ameblo.jp/smileage-submember/entry-11829355763.html",
+                                               #         :title => "キャンペーン！勝田里奈",
+                                               #         :published => "2014-04-21 21:34:17",
+                                               #         :comment_count => 55,
+                                               #         :author => "Katsuta",
+                                               #       },
+                                               #     ],
+                                               #   }
 
     ## Track infomation
 
