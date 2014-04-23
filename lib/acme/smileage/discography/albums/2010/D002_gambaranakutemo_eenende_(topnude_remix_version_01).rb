@@ -14,6 +14,7 @@ module Acme
             @name_romaji = "gambaranakutemo eenende!! (topnude remix version 01)"
             @nicknames = []
             @release_date = Date.new(2010, 8, 7)
+            @oricon = nil
             @discography_link = "http://s-mileage.jp/discography/detail_00037/"
             @artwork_links = [
               {

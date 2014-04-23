@@ -14,6 +14,7 @@ module Acme
             @name_romaji = "uchouten love -rocketman mix-"
             @nicknames = []
             @release_date = Date.new(2011, 8, 18)
+            @oricon = nil
             @discography_link = "http://s-mileage.jp/discography/detail_00081/"
             @artwork_links = [
               {
