@@ -6,6 +6,7 @@ require "singleton"
 require "uri"
 
 require "acme/smileage/discography/hello_project_music_award"
+require "acme/smileage/downloader/lyrics"
 
 module Acme
   class Smileage
@@ -29,44 +30,7 @@ module Acme
 
           def get_lyrics(site=nil)
             return nil unless self.lyric_links
-
-            case site
-            when :utanet
-              get_utanet(self.lyric_links[:utanet])
-            when :utamap
-              get_utamap(self.lyric_links[:utamap])
-            when nil
-              get_lyrics(:utanet) or get_lyrics(:utamap)
-            else
-              raise ArgumentError, "Invalid site: #{site}"
-            end
-          end
-
-          private
-
-          def get_utanet(uri)
-            return nil if not uri or not uri =~ /\/song\/(\d+)/
-            id = $1
-
-            r = http_get(uri, "/user/phplib/swf/showkasi.php?ID=#{id}")
-            r = r[(10 + 16 * 4) - 1, r.length - (10 + 16 * 4) - 13]
-            r.force_encoding("utf-8")
-            r.sub!(/\A\0\n/, "")
-            r.strip
-          end
-
-          def get_utamap(uri)
-            return nil if not uri or not uri =~ /\?surl=([a-zA-Z0-9-]+)/
-            id = $1
-
-            r = http_get(uri, "/phpflash/flashfalsephp.php?unum=#{id}")
-            r.force_encoding("utf-8")
-            r.sub(/^.*?test2=/, "").strip
-          end
-
-          def http_get(baseuri, path)
-            uri = URI(baseuri) + path
-            open(uri, "User-Agent" => DEFAULT_USER_AGENT) {|f| f.read }
+            Acme::Smileage::Downloader::Lyrics.new.get(self.lyric_links, site)
           end
         end
       end
