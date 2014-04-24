@@ -1,6 +1,6 @@
 require "date"
 
-require "acme/smileage/downloader/ameblo"
+require "acme/smileage/blog"
 
 module Acme
   class Smileage
@@ -47,15 +47,8 @@ module Acme
           self.graduate_date < date
         end
 
-        def get_blog_entry_list(page=1)
-          r = Acme::Smileage::Downloader::Ameblo.new.get_entry_list(self.blog_link, page)
-
-          # 2 期ブログは共同なので author でフィルタ
-          if self.generation > 1 and not r[:entries].empty?
-            r[:entries] = r[:entries].select {|e| e[:author] == self.family_name_en }
-          end
-
-          r
+        def blog
+          @blog ||= Acme::Smileage::Blog.new(self.blog_link, self.family_name_en)
         end
       end
     end

@@ -14,27 +14,41 @@ module Acme
           }
           return r unless blog_link
 
-          uri = URI(blog_link) + "entrylist-#{page}.html"
-          with_nokogiri(uri) do |doc|
-            doc.css('.contentsList li').each do |li|
+          with_nokogiri(blog_link, "entrylist-#{page}.html") do |doc, uri|
+            doc.css(".contentsList li").each do |li|
               r[:entries] << parse_entry_list_item(li)
             end
 
-            r[:link] = uri.to_s,
+            r[:link] = uri.to_s
             r[:next_page] = parse_next_page(doc)
             r
+          end
+        end
+
+        def get_entry(entry_link)
+          with_nokogiri(entry_link) do |doc|
+            {
+              :title => parse_text(doc, ".skinArticleTitle"),
+              :published => parse_text(doc, ".articleTime > time"),
+              :body => parse_text(doc, ".articleText"),
+              :good_count => parse_attr(doc, ".iineEntryCnt", "data-entryiinecnt").to_i,
+              :comment_count =>  parse_number(doc, ".commentLink"),
+              :comment_link => parse_attr(doc, ".commentLink", :href),
+              :next_entry_link => parse_attr(doc, ".pagingNext", :href),
+              :prev_entry_link => parse_attr(doc, ".pagingPrev", :href),
+              :images => parse_image_list(doc),
+              :comments => parse_comment_list(entry_link, doc),
+            }
           end
         end
 
         private
 
         def parse_entry_list_item(li)
-          link = li.css('.contentTitle')[0][:href]
-          title = li.css('.contentTitle').text
-          published = li.css('.contentTime').text
-          if e = li.css('.contentComment').text
-            count = $1.to_i if e =~ /(\d+)/
-          end
+          link = parse_attr(li, ".contentTitle", :href)
+          title = parse_text(li, ".contentTitle")
+          published = parse_text(li, ".contentTime")
+          count = parse_number(li, ".contentComment")
 
           return {
             :link => safe_strip(link),
@@ -46,11 +60,35 @@ module Acme
         end
 
         def parse_next_page(doc)
-          e = doc.css('.listPagePaging .pagingNext')
-          if e and not e.empty? and e[0][:href] =~ /entrylist-(\d+)/
-            $1.to_i
+          parse_attr(doc, ".listPagePaging .pagingNext", :href) do |href|
+            href[/entrylist-(\d+)/, 1].to_i if href
           end
         end
+
+        def parse_image_list(doc)
+          doc.css(".articleText a img").map{|e|
+            src =  e[:src]
+            if src.sub!(/t[0-9]+_([0-9]+)/) { "o#{$1}" }
+              src
+            end
+          }.compact
+        end
+
+        def parse_comment_list(entry_link, doc)
+          r = []
+          doc.css(".commentList li").each do |li|
+            r << {
+              :link => "%s#%s" % [entry_link, li.css("a")[0][:id]],
+              :title => parse_text(li, ".commentHeader"),
+              :body => parse_text(li, ".commentBody"),
+              :author => parse_text(li, ".commentAuthor"),
+              :author_link => parse_attr(li, ".commentAuthor", :href),
+              :time => parse_text(li, ".commentTime > time"),
+            }
+          end
+          r
+        end
+
 
         BLOG_ENTRY_AUTHOR_MAPPING = {
           "http://ameblo.jp/smileage-submember/entry-11018609295.html" => "Katsuta",
@@ -90,6 +128,35 @@ module Acme
             when /田村芽実/, /田村/, /芽実/
               "Tamura"
             end
+          end
+        end
+
+        def parse_text(doc, css)
+          e = doc.css(css)
+          return nil if not e
+
+          e.text.strip
+        end
+
+        def parse_number(doc, css)
+          v = parse_text(doc, css)
+          return nil if not v
+
+          vv = v[/\d+/, 0]
+          return nil if not vv
+
+          vv.to_i
+        end
+
+        def parse_attr(doc, css, attr)
+          e = doc.css(css)
+          return nil if not e or e.empty?
+
+          v = e[0][attr]
+          if block_given?
+            yield v
+          else
+            v
           end
         end
 
