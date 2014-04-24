@@ -9,19 +9,23 @@ module Acme
     module Downloader
       class Ameblo < Base
         def get_entry_list(blog_link, page=1)
+          r = {
+            :link => nil,
+            :entries => [],
+            :next_page => nil,
+          }
+          return r unless blog_link
+
           uri = URI(blog_link) + "entrylist-#{page}.html"
-          entries = []
           open(uri) do |f|
             doc = Nokogiri::HTML(f)
             doc.css('.contentsList li').each do |li|
-              entries << parse_entry_list_item(li)
+              r[:entries] << parse_entry_list_item(li)
             end
 
-            return {
-              :link => uri.to_s,
-              :entries => entries,
-              :next_page => parse_next_page(doc),
-            }
+            r[:link] = uri.to_s,
+            r[:next_page] = parse_next_page(doc)
+            r
           end
         end
 

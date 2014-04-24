@@ -48,8 +48,6 @@ module Acme
         end
 
         def get_blog_entry_list(page=1)
-          return [] unless self.blog_link
-
           r = Acme::Smileage::Downloader::Ameblo.new.get_entry_list(self.blog_link, page)
 
           # 2 期ブログは共同なので author でフィルタ
