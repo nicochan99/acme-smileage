@@ -8,7 +8,7 @@ module Acme
   class Smileage
     module Downloader
       class Ameblo < Base
-        def get(blog_link, page=1)
+        def get_entry_list(blog_link, page=1)
           uri = URI(blog_link) + "entrylist-#{page}.html"
           entries = []
           open(uri) do |f|

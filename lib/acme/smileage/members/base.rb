@@ -50,7 +50,7 @@ module Acme
         def get_blog_entry_list(page=1)
           return [] unless self.blog_link
 
-          r = Acme::Smileage::Downloader::Ameblo.new.get(self.blog_link, page)
+          r = Acme::Smileage::Downloader::Ameblo.new.get_entry_list(self.blog_link, page)
 
           # 2 期ブログは共同なので author でフィルタ
           if self.generation > 1 and not r[:entries].empty?
