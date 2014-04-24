@@ -3,6 +3,8 @@
 require "open-uri"
 require "uri"
 
+require "nokogiri"
+
 module Acme
   class Smileage
     module Downloader
@@ -11,9 +13,23 @@ module Acme
 
         private
 
-        def http_get(baseuri, path)
-          uri = URI(baseuri) + path
-          open(uri, "User-Agent" => DEFAULT_USER_AGENT) {|f| f.read }
+        def with_nokogiri(baseuri, path = nil)
+          open(make_uri(baseuri, path), "User-Agent" => DEFAULT_USER_AGENT) do |f|
+            yield Nokogiri::HTML(f), uri
+          end
+        end
+
+        def http_get(baseuri, path = nil)
+          open(make_uri(baseuri, path), "User-Agent" => DEFAULT_USER_AGENT) {|f| f.read }
+        end
+
+        def make_uri(baseuri, path = nil)
+          r = URI(baseuri)
+          if path
+            r + path
+          else
+            r
+          end
         end
       end
     end

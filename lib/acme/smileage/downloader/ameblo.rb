@@ -1,7 +1,5 @@
 # -*- encoding: utf-8 -*-
 
-require "nokogiri"
-
 require "acme/smileage/downloader/base"
 
 module Acme
@@ -17,8 +15,7 @@ module Acme
           return r unless blog_link
 
           uri = URI(blog_link) + "entrylist-#{page}.html"
-          open(uri) do |f|
-            doc = Nokogiri::HTML(f)
+          with_nokogiri(uri) do |doc|
             doc.css('.contentsList li').each do |li|
               r[:entries] << parse_entry_list_item(li)
             end
