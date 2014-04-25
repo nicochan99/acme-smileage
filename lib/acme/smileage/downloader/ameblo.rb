@@ -1,5 +1,8 @@
 # -*- encoding: utf-8 -*-
 
+require "cgi"
+
+require "acme/smileage/blog/entry"
 require "acme/smileage/downloader/base"
 
 module Acme
@@ -7,62 +10,51 @@ module Acme
     module Downloader
       class Ameblo < Base
         def get_entry_list(blog_link, page=1)
-          r = {
-            :link => nil,
-            :entries => [],
-            :next_page => nil,
-          }
-          return r unless blog_link
+          unless blog_link
+            Acme::Smileage::Blog::Entry::List.new
+          end
 
           with_nokogiri(blog_link, "entrylist-#{page}.html") do |doc, uri|
-            doc.css(".contentsList li").each do |li|
-              r[:entries] << parse_entry_list_item(li)
-            end
-
-            r[:link] = uri.to_s
-            r[:next_page] = parse_next_page(doc)
-            r
+            Acme::Smileage::Blog::Entry::List.new {|e|
+              e.link = uri.to_s
+              e.entries = parse_entry_list(doc)
+              e.next_page = parse_next_page(doc)
+            }
           end
         end
 
-        def get_entry(entry_link)
+        def get_entry_body(entry_link)
           with_nokogiri(entry_link) do |doc|
-            {
-              :title => parse_text(doc, ".skinArticleTitle"),
-              :published => parse_text(doc, ".articleTime > time"),
-              :body => parse_text(doc, ".articleText"),
-              :good_count => parse_attr(doc, ".iineEntryCnt", "data-entryiinecnt").to_i,
-              :comment_count =>  parse_number(doc, ".commentLink"),
-              :comment_link => parse_attr(doc, ".commentLink", :href),
-              :next_entry_link => parse_attr(doc, ".pagingNext", :href),
-              :prev_entry_link => parse_attr(doc, ".pagingPrev", :href),
-              :images => parse_image_list(doc),
-              :comments => parse_comment_list(entry_link, doc),
+            Acme::Smileage::Blog::Entry::Body.new {|e|
+              e.text = parse_text(doc, ".articleText")
+              e.comment_link = parse_attr(doc, ".commentLink", :href)
+              e.next_entry_link = parse_attr(doc, ".pagingNext", :href)
+              e.prev_entry_link = parse_attr(doc, ".pagingPrev", :href)
+              e.image_links = parse_image_list(doc)
+              e.comments = parse_comment_list(entry_link, doc)
             }
           end
         end
 
         private
 
-        def parse_entry_list_item(li)
-          link = parse_attr(li, ".contentTitle", :href)
-          title = parse_text(li, ".contentTitle")
-          published = parse_text(li, ".contentTime")
-          count = parse_number(li, ".contentComment")
-
-          return {
-            :link => safe_strip(link),
-            :title => safe_strip(title),
-            :published => safe_strip(published),
-            :comment_count => count,
-            :author => guess_author(link, title),
+        def parse_entry_list(doc)
+          doc.css(".contentsList li").map {|li|
+            Acme::Smileage::Blog::Entry::Header.new {|e|
+              e.link = parse_attr(li, ".contentTitle", :href)
+              e.title = parse_text(li, ".contentTitle")
+              e.datetime = parse_text(li, ".contentTime")
+              e.comment_count = parse_number(li, ".contentComment")
+              e.good_count = parse_number(li, "a.skinWeakColor")
+              e.author = guess_author(e.link, e.title)
+            }
           }
         end
 
         def parse_next_page(doc)
-          parse_attr(doc, ".listPagePaging .pagingNext", :href) do |href|
+          parse_attr(doc, ".listPagePaging .pagingNext", :href) {|href|
             href[/entrylist-(\d+)/, 1].to_i if href
-          end
+          }
         end
 
         def parse_image_list(doc)
@@ -75,18 +67,16 @@ module Acme
         end
 
         def parse_comment_list(entry_link, doc)
-          r = []
-          doc.css(".commentList li").each do |li|
-            r << {
-              :link => "%s#%s" % [entry_link, li.css("a")[0][:id]],
-              :title => parse_text(li, ".commentHeader"),
-              :body => parse_text(li, ".commentBody"),
-              :author => parse_text(li, ".commentAuthor"),
-              :author_link => parse_attr(li, ".commentAuthor", :href),
-              :time => parse_text(li, ".commentTime > time"),
+          doc.css(".commentList li").map {|li|
+            Acme::Smileage::Blog::Entry::Comment.new {|e|
+              e.link = "%s#%s" % [entry_link, li.css("a")[0][:id]]
+              e.title = parse_text(li, ".commentHeader")
+              e.text = parse_text(li, ".commentBody")
+              e.author = parse_text(li, ".commentAuthor")
+              e.author_link = parse_attr(li, ".commentAuthor", :href)
+              e.datetime = parse_text(li, ".commentTime > time")
             }
-          end
-          r
+          }
         end
 
 
@@ -135,7 +125,17 @@ module Acme
           e = doc.css(css)
           return nil if not e
 
-          e.text.strip
+          # これだと改行がうまく変換できない場合があるので自前で処理
+          # e.css("br").each {|ee| ee.replace("\n") }
+          # e.text.strip
+
+          v = e.to_s
+          v.gsub!(/<br\/?>/i, "\n")
+          v.gsub!(%r{<img.*?src="(http://stat\.ameba\.jp/user_images/.*?/)t[0-9]+_([0-9]+\.jpg)".*?>}) { "%so%s" % [$1, $2] }
+          v.gsub!(/<.*?>/, "")
+          v.gsub!(/\r/, "")
+          v.gsub!(/\u00a0/, "")
+          CGI.unescapeHTML(v.strip) if v
         end
 
         def parse_number(doc, css)
@@ -153,17 +153,14 @@ module Acme
           return nil if not e or e.empty?
 
           v = e[0][attr]
+          v.strip! if v
+
           if block_given?
             yield v
           else
             v
           end
         end
-
-        def safe_strip(s)
-          s.strip if s
-        end
-
       end
     end
   end
