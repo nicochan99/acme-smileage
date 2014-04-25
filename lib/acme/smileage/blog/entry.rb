@@ -19,12 +19,7 @@ module Acme
           attr_accessor :author
 
           def initialize(blog)
-            @blog = blog
             yield self
-          end
-
-          def get_body
-            @blog.get_entry_body(self)
           end
         end
 

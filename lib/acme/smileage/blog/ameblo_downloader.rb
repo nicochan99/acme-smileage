@@ -47,6 +47,10 @@ module Acme
               e.comment_count = parse_number(li, ".contentComment")
               e.good_count = parse_number(li, "a.skinWeakColor")
               e.author = guess_author(e.link, e.title)
+
+              e.define_singleton_method(:get_body, Proc.new {
+                blog.get_entry_body(e)
+              })
             }
           }
         end
