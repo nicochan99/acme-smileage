@@ -14,7 +14,8 @@ module Acme
         private
 
         def with_nokogiri(baseuri, path = nil)
-          open(make_uri(baseuri, path), "User-Agent" => DEFAULT_USER_AGENT) do |f|
+          uri = make_uri(baseuri, path)
+          open(uri, "User-Agent" => DEFAULT_USER_AGENT) do |f|
             yield Nokogiri::HTML(f), uri
           end
         end
