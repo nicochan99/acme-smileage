@@ -17,9 +17,9 @@ module Acme
         end
 
         def get_entry_list(page = 1)
-          r = (@@cache[[self.blog_link, page]] ||= @downloader.get_entry_list(self.blog_link, page))
+          c = (@@cache[[self.blog_link, page]] ||= @downloader.get_entry_list(self, self.blog_link, page))
 
-          r = r.dup
+          r = c.dup
           r.entries = r.entries.select {|e| e.author == self.author }
           r
         end

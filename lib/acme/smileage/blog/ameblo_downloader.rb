@@ -9,7 +9,7 @@ module Acme
   class Smileage
     module Blog
       class AmebloDownloader < Acme::Smileage::Utils::BaseDownloader
-        def get_entry_list(blog_link, page=1)
+        def get_entry_list(blog, blog_link, page=1)
           unless blog_link
             Acme::Smileage::Blog::Entry::List.new
           end
@@ -17,7 +17,7 @@ module Acme
           with_nokogiri(blog_link, "entrylist-#{page}.html") do |doc, uri|
             Acme::Smileage::Blog::Entry::List.new {|e|
               e.link = uri.to_s
-              e.entries = parse_entry_list(doc)
+              e.entries = parse_entry_list(blog, doc)
               e.next_page = parse_next_page(doc)
             }
           end
@@ -38,20 +38,15 @@ module Acme
 
         private
 
-        def parse_entry_list(doc)
+        def parse_entry_list(blog, doc)
           doc.css(".contentsList li").map {|li|
-            Acme::Smileage::Blog::Entry::Header.new {|e|
+            Acme::Smileage::Blog::Entry::Header.new(blog) {|e|
               e.link = parse_attr(li, ".contentTitle", :href)
               e.title = parse_text(li, ".contentTitle")
               e.datetime = parse_text(li, ".contentTime")
               e.comment_count = parse_number(li, ".contentComment")
               e.good_count = parse_number(li, "a.skinWeakColor")
               e.author = guess_author(e.link, e.title)
-
-              downloader = self
-              e.define_singleton_method(:get_entry_body, Proc.new {
-                downloader.get_entry_body(e.link)
-              })
             }
           }
         end

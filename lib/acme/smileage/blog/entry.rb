@@ -18,8 +18,13 @@ module Acme
           attr_accessor :comment_count, :good_count
           attr_accessor :author
 
-          def initialize
+          def initialize(blog)
+            @blog = blog
             yield self
+          end
+
+          def get_body
+            @blog.get_entry_body(self)
           end
         end
 
