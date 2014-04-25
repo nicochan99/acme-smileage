@@ -58,19 +58,51 @@ Or install it yourself as:
     p member.graduated?                        #=> false
     p member.graduated?(Date.new(2010, 1, 1))  #=> false
 
-    p member.get_blog_entry_list               #=> {
-                                               #     :link => "http://ameblo.jp/smileage-submember/entrylist-1.html",
-                                               #     :next_page => 2,
-                                               #     :entries => [
-                                               #       {
-                                               #         :link => "http://ameblo.jp/smileage-submember/entry-11829355763.html",
-                                               #         :title => "キャンペーン！勝田里奈",
-                                               #         :published => "2014-04-21 21:34:17",
-                                               #         :comment_count => 55,
-                                               #         :author => "Katsuta",
-                                               #       },
+    entry_list = member.get_blog_entry_list
+    pp entry_list                              #=> #<Acme::Smileage::Blog::Entry::List:0x1b7f590
+                                               #    @entries=
+                                               #     [#<Acme::Smileage::Blog::Entry::Header:0x1b948a8
+                                               #       @author="Katsuta",
+                                               #       @comment_count=51,
+                                               #       @datetime="2014-04-24 20:03:52",
+                                               #       @good_count=186,
+                                               #       @link="http://ameblo.jp/smileage-submember/entry-11832527015.html",
+                                               #       @title="海外♪勝田里奈">,
+                                               #      #<Acme::Smileage::Blog::Entry::Header:0x1bbcd48
+                                               #       @author="Katsuta",
+                                               #       @comment_count=51,
+                                               #       @datetime="2014-04-23 22:50:50",
+                                               #       @good_count=250,
+                                               #       @link="http://ameblo.jp/smileage-submember/entry-11831671384.html",
+                                               #       @title="Zipper！勝田里奈">,
+                                               #      #<Acme::Smileage::Blog::Entry::Header:0x208a520
+                                               #       @author="Katsuta",
+                                               #       @comment_count=57,
+                                               #       @datetime="2014-04-21 21:34:17",
+                                               #       @good_count=233,
+                                               #       @link="http://ameblo.jp/smileage-submember/entry-11829355763.html",
+                                               #       @title=
+                                               #        "キャンペーン！勝田里奈">],
+                                               #    @link="http://ameblo.jp/smileage-submember/entrylist-1.html",
+                                               #    @next_page=2>
+
+    pp entry_list.entries.first.get_body       #=> #<Acme::Smileage::Blog::Entry::Body:0x1dba760
+                                               #    @comment_link="http://ameblo.jp/smileage-submember/entry-11832527015.html#cbox",
+                                               #    @comments=
+                                               #     [#<Acme::Smileage::Blog::Entry::Comment:0x163f4b8
+                                               #       @author="xxx",
+                                               #       @author_link="http://ameblo.jp/xxx/",
+                                               #       @datetime="2014-04-24 20:07:51",
+                                               #       @link= "http://ameblo.jp/smileage-submember/entry-11832527015.html#c12503056111",
+                                               #       @text= "yyy",
+                                               #       @title="2. zzz">,
+                                               #       # 省略
                                                #     ],
-                                               #   }
+                                               #    @image_links=
+                                               #     ["http://stat.ameba.jp/user_images/20140424/20/smileage-submember/30/03/j/o0240024012918923521.jpg"],
+                                               #    @next_entry_link="http://ameblo.jp/smileage-submember/entry-11832574000.html",
+                                               #    @prev_entry_link="http://ameblo.jp/smileage-submember/entry-11832528306.html",
+                                               #    @text="(省略)">
 
     ## Track infomation
 
