@@ -1,6 +1,6 @@
 require "date"
 
-require "acme/smileage/blog"
+require "acme/smileage/blog/ameblo"
 
 module Acme
   class Smileage
@@ -48,7 +48,7 @@ module Acme
         end
 
         def blog
-          @blog ||= Acme::Smileage::Blog.new(self.blog_link, self.family_name_en)
+          @blog ||= Acme::Smileage::Blog::Ameblo.new(self.blog_link, self.family_name_en)
         end
       end
     end

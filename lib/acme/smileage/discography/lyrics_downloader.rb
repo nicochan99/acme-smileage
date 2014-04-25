@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 
-require "acme/smileage/downloader/base"
+require "acme/smileage/utils/base_downloader"
 
 module Acme
   class Smileage
-    module Downloader
-      class Lyrics < Base
+    class Discography
+      class LyricsDownloader < Acme::Smileage::Utils::BaseDownloader
         def get(lyric_links, site=nil)
           return nil unless lyric_links
 

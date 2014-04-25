@@ -2,7 +2,7 @@
 
 module Acme
   class Smileage
-    class Blog
+    module Blog
       module Entry
         class List
           attr_accessor :link, :entries, :next_page

@@ -7,8 +7,8 @@ require "nokogiri"
 
 module Acme
   class Smileage
-    module Downloader
-      class Base
+    module Utils
+      class BaseDownloader
         DEFAULT_USER_AGENT = "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)"
 
         private

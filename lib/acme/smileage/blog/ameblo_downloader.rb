@@ -3,12 +3,12 @@
 require "cgi"
 
 require "acme/smileage/blog/entry"
-require "acme/smileage/downloader/base"
+require "acme/smileage/utils/base_downloader"
 
 module Acme
   class Smileage
-    module Downloader
-      class Ameblo < Base
+    module Blog
+      class AmebloDownloader < Acme::Smileage::Utils::BaseDownloader
         def get_entry_list(blog_link, page=1)
           unless blog_link
             Acme::Smileage::Blog::Entry::List.new
@@ -47,6 +47,11 @@ module Acme
               e.comment_count = parse_number(li, ".contentComment")
               e.good_count = parse_number(li, "a.skinWeakColor")
               e.author = guess_author(e.link, e.title)
+
+              downloader = self
+              e.define_singleton_method(:get_entry_body, Proc.new {
+                downloader.get_entry_body(e.link)
+              })
             }
           }
         end

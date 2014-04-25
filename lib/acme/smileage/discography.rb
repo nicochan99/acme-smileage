@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-require "acme/smileage/matcher"
+require "acme/smileage/utils/matcher"
 require "acme/smileage/discography/albums"
 require "acme/smileage/discography/tracks"
 
@@ -67,7 +67,7 @@ module Acme
       private
 
       def find(label, name, targets)
-        matcher = Matcher.new(name.encode("UTF-8"))
+        matcher = Acme::Smileage::Utils::Matcher.new(name.encode("UTF-8"))
         canon_name = matcher.match(targets.map {|e| names(e) }.flatten)
         raise ArgumentError, "#{label} not found: #{name}" unless canon_name
         targets.find {|e| names(e).include?(canon_name) }

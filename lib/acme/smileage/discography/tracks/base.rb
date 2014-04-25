@@ -6,7 +6,7 @@ require "singleton"
 require "uri"
 
 require "acme/smileage/discography/hello_project_music_award"
-require "acme/smileage/downloader/lyrics"
+require "acme/smileage/discography/lyrics_downloader"
 
 module Acme
   class Smileage
@@ -30,7 +30,7 @@ module Acme
 
           def get_lyrics(site=nil)
             return nil unless self.lyric_links
-            Acme::Smileage::Downloader::Lyrics.new.get(self.lyric_links, site)
+            Acme::Smileage::Discography::LyricsDownloader.new.get(self.lyric_links, site)
           end
         end
       end
