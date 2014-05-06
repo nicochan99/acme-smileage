@@ -6,6 +6,19 @@ module Acme
       class Sales
         attr_reader :first_week_sales, :total_sales, :peak_rank, :weeks_on_chart
 
+        def self.records(*records)
+          if records.empty?
+            return self.new(0, 0, 0, 0)
+          end
+
+          first_week_sales = records[0][:sales]
+          total_sales = records.inject(0){|acc,e| acc + e[:sales] }
+          peak_rank = records.map{|e| e[:rank] }.max
+          weeks_on_chart = records.length
+
+          self.new(first_week_sales, total_sales, peak_rank, weeks_on_chart)
+        end
+
         def initialize(first_week_sales, total_sales, peak_rank, weeks_on_chart)
           @first_week_sales = first_week_sales
           @total_sales = total_sales
