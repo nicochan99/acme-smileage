@@ -24,4 +24,5 @@ This module, acme-smileage, provides an easy method to catch up with S/mileage.}
   spec.add_development_dependency "minitest", "~> 5.3"
   spec.add_runtime_dependency "amatch", '~> 0.3'
   spec.add_runtime_dependency "moji", '~> 1.6'
+  spec.add_runtime_dependency "nokogiri", '~> 1.6'
 end
