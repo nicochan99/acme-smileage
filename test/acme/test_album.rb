@@ -12,6 +12,7 @@ class Acme::TestAlbum < Minitest::Test
     assert_equal "夢見る 15歳", a.name
     assert_equal "yumemiru 15sai", a.name_romaji
     assert_equal Date.new(2010, 5, 26), a.release_date
+    assert_equal 2010, a.release_year
     assert_equal [20438, 24936, 5, 4], a.oricon.to_a
 
     artwork_links = [
@@ -51,6 +52,7 @@ class Acme::TestAlbum < Minitest::Test
     assert_equal "ぁまのじゃく", a.name
     assert_equal "amanojaku", a.name_romaji
     assert_equal Date.new(2009, 6, 7), a.release_date
+    assert_equal 2009, a.release_year
     assert_equal [0, 0, 0, 0], a.oricon.to_a
     artwork_links = [
       {
@@ -80,6 +82,7 @@ class Acme::TestAlbum < Minitest::Test
     assert_equal "夢見る 15歳 (PAX JAPONICA GROOVE REMIX)", a.name
     assert_equal "yumemiru 15sai (pax japonica groove remix)", a.name_romaji
     assert_equal Date.new(2010, 6, 18), a.release_date
+    assert_equal 2010, a.release_year
     artwork_links = [
       {
         :title => "夢見る 15歳 (PAX JAPONICA GROOVE REMIX)",
@@ -108,6 +111,7 @@ class Acme::TestAlbum < Minitest::Test
     assert_equal "悪ガキッ①", a.name
     assert_equal "waru gaki (1)", a.name_romaji
     assert_equal Date.new(2010, 12, 8), a.release_date
+    assert_equal 2010, a.release_year
     assert_equal [8905, 11848, 18, 5], a.oricon.to_a
 
     artwork_links = [

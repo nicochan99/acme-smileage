@@ -12,6 +12,8 @@ module Acme
           attr_reader :oricon
           attr_reader :tracks
 
+          def release_year; self.release_date.year; end
+
           def single?; not album? and not download_only?; end
           def album?; false; end
           def best_album?; false; end

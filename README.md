@@ -172,6 +172,7 @@ Or install it yourself as:
     p album.name_romaji                #=> "(2) smile sensation"
     p album.nicknames                  #=> ["ƒXƒ}ƒZƒ“"]
     p album.release_date               #=> #<Date: 2013-05-22 ((2456435j,0s,0n),+0s,2299161j)>
+    p album.release_year               #=> 2013
     p album.discography_link           #=> "http://s-mileage.jp/discography/detail_00146/"
     p album.artwork_links              #=> [
                                        #     {
