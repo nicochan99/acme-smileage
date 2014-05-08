@@ -129,4 +129,16 @@ class Acme::TestSmileage < Minitest::Test
     assert_equal a, s.find_track("私、ちょいとカワイイ裏番長")
     assert_equal a, s.find_track("私、チョイトカワイイ裏番長")
   end
+
+  def test_oricon_total_sales
+    s = ::Acme::Smileage.new
+
+    assert_equal 399, s.oricon_total_sales {|e| e.single? and e.release_year == 2009 }
+    assert_equal 81248, s.oricon_total_sales {|e| e.single? and e.release_year == 2010 }
+    assert_equal 140449, s.oricon_total_sales {|e| e.single? and e.release_year == 2011 }
+    assert_equal 89867, s.oricon_total_sales {|e| e.single? and e.release_year == 2012 }
+    assert_equal 89365, s.oricon_total_sales {|e| e.single? and e.release_year == 2013 }
+
+    assert_equal 462702, s.oricon_total_sales {|e| e.release_date < Date.new(2014, 5, 1) }
+  end
 end

@@ -167,6 +167,9 @@ Or install it yourself as:
     all_original_albums  = sm.discography {|e| e.original_album? }
     all_best_albums      = sm.discography {|e| e.best_album? }
 
+    sm.oricon_total_sales                #=> 462702
+    sm.oricon_total_sales {e| e.album? } #=> 27034
+
     album = sm.find_discography("スマセン")
     p album.name                       #=> "②スマイルセンセーション"
     p album.name_romaji                #=> "(2) smile sensation"

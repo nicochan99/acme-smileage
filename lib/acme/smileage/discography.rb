@@ -64,6 +64,17 @@ module Acme
         find("Track", name, @tracks)
       end
 
+      def oricon_total_sales(&block)
+        albums = block ? @albums.select(&block) : @albums
+        albums.inject(0) {|sum,e|
+          if e.oricon
+            sum + e.oricon.total_sales
+          else
+            sum
+          end
+        }
+      end
+
       private
 
       def find(label, name, targets)

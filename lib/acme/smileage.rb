@@ -39,5 +39,9 @@ module Acme
     def find_track(name)
       @discography.find_track(name)
     end
+
+    def oricon_total_sales(&block)
+      @discography.oricon_total_sales(&block)
+    end
   end
 end
