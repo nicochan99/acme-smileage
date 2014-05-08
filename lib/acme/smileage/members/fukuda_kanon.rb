@@ -21,7 +21,7 @@ module Acme
           @join_date = Date.new(2009, 4, 4)
           @graduate_date = nil
           @blog_link = "http://ameblo.jp/kanon-fukuda/"
-          @twitter_accounts = ["@kanonfukuda"]
+          @twitter_accounts = ["@kanonfukuda", "@smileage_715"]
         end
       end
     end
