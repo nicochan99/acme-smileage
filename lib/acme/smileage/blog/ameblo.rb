@@ -10,7 +10,7 @@ module Acme
 
         attr_reader :blog_link, :author
 
-        def initialize(blog_link, author)
+        def initialize(blog_link, author = nil)
           @blog_link = blog_link
           @author = author
           @downloader = Acme::Smileage::Blog::AmebloDownloader.new
@@ -20,7 +20,9 @@ module Acme
           c = (@@cache[[self.blog_link, page]] ||= @downloader.get_entry_list(self, self.blog_link, page))
 
           r = c.dup
-          r.entries = r.entries.select {|e| e.author == self.author }
+          if self.author
+            r.entries = r.entries.select {|e| e.author == self.author }
+          end
           r
         end
 

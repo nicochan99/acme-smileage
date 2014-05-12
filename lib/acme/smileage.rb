@@ -32,6 +32,14 @@ module Acme
       @discography.tracks(&block)
     end
 
+    def blogs(&block)
+      members = block ? @members.select(&block) : @members
+      members = members.select {|e| e.active? }
+      members.map{|e| e.blog_link }.compact.uniq.map {|blog_link|
+        Acme::Smileage::Blog::Ameblo.new(blog_link)
+      }
+    end
+
     def find_discography(name)
       @discography.find_discography(name)
     end
