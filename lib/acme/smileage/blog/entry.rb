@@ -9,7 +9,7 @@ module Acme
 
           def initialize
             self.entries = []
-            yield self
+            yield self if block_given?
           end
         end
 
@@ -19,7 +19,7 @@ module Acme
           attr_accessor :author
 
           def initialize(blog)
-            yield self
+            yield self if block_given?
           end
         end
 
@@ -32,7 +32,7 @@ module Acme
           def initialize
             self.image_links = []
             self.comments = []
-            yield self
+            yield self if block_given?
           end
         end
 
@@ -42,7 +42,7 @@ module Acme
           attr_accessor :author, :author_link
 
           def initialize
-            yield self
+            yield self if block_given?
           end
         end
       end
