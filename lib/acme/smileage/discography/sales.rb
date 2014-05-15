@@ -13,7 +13,7 @@ module Acme
 
           first_week_sales = records[0][:sales]
           total_sales = records.inject(0){|acc,e| acc + e[:sales] }
-          peak_rank = records.map{|e| e[:rank] }.max
+          peak_rank = records.map{|e| e[:rank] }.min
           weeks_on_chart = records.length
 
           self.new(first_week_sales, total_sales, peak_rank, weeks_on_chart)
