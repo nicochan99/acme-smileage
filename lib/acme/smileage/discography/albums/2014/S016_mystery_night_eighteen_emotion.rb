@@ -16,6 +16,7 @@ module Acme
             @release_date = Date.new(2014, 4, 30)
             @oricon = Sales.records(
               { :week => 1, :sales => 34340, :rank =>  2 },
+              { :week => 2, :sales =>  1047, :rank => 56 },
             )
             @discography_link = "http://s-mileage.jp/discography/detail_00186/"
             @artwork_links = [
