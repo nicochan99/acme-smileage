@@ -139,6 +139,6 @@ class Acme::TestSmileage < Minitest::Test
     assert_equal 89867, s.oricon_total_sales {|e| e.single? and e.release_year == 2012 }
     assert_equal 89365, s.oricon_total_sales {|e| e.single? and e.release_year == 2013 }
 
-    assert_equal 462702, s.oricon_total_sales {|e| e.release_date < Date.new(2014, 5, 1) }
+    assert_equal 428362, s.oricon_total_sales {|e| e.release_date < Date.new(2014, 1, 1) }
   end
 end
