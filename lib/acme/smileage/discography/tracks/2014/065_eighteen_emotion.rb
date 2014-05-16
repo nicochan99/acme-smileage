@@ -14,7 +14,7 @@ module Acme
             @name = "エイティーン エモーション"
             @name_romaji = "eighteen emotion"
             @nicknames = ["エイエモ", "18エモ"]
-            @duration = 217 # 3:37
+            @play_time = 217 # 3:37
             @arrangers = ["板垣祐介"]
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-140430-016",

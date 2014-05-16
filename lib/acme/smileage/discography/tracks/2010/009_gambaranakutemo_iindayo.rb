@@ -14,7 +14,7 @@ module Acme
             @name = "○○ がんばらなくてもいいんだよ！！"
             @name_romaji = "gambaranakutemo iindayo"
             @nicknames = []
-            @duration = 255 # 04:15
+            @play_time = 255 # 04:15
             @arrangers = ["高橋諭一"]
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-100728-117",

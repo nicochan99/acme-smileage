@@ -14,7 +14,7 @@ module Acme
             @name = "さよなら さよなら さよなら"
             @name_romaji = "sayonara sayonara sayonara"
             @nicknames = []
-            @duration = 221 # 03:41
+            @play_time = 221 # 03:41
             @arrangers = ["AKIRA"]
             @hpma = HelloProjectMusicAward.new(2013, 96, 20.0, 14)
             @lyric_links = {

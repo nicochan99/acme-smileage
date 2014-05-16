@@ -20,7 +20,7 @@ class Acme::TestTrack < Minitest::Test
     assert_equal false, a.cover?
     assert_equal false, a.remix?
     assert_equal [2010, 42, 49.0, 31], a.hpma.to_a
-    assert_equal 230, a.duration
+    assert_equal 230, a.play_time
   end
 
   def test_tracks_cover
@@ -36,7 +36,7 @@ class Acme::TestTrack < Minitest::Test
     assert_equal true, a.cover?
     assert_equal false, a.remix?
     assert_equal [2010, 121, 4.0, 3], a.hpma.to_a
-    assert_equal 243, a.duration
+    assert_equal 243, a.play_time
   end
 
   def test_tracks_remix
@@ -52,6 +52,6 @@ class Acme::TestTrack < Minitest::Test
     assert_equal false, a.cover?
     assert_equal true, a.remix?
     assert_equal [2011, 121, 4.5, 3], a.hpma.to_a
-    assert_equal 336, a.duration
+    assert_equal 336, a.play_time
   end
 end

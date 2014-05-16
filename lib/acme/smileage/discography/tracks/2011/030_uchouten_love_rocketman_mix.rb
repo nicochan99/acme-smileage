@@ -14,7 +14,7 @@ module Acme
             @name = "有頂天LOVE ～rocketman mix～"
             @name_romaji = "uchouten love -rocketman mix-"
             @nicknames = []
-            @duration = 257 # 04:17
+            @play_time = 257 # 04:17
             @arrangers = ["大久保薫"]
             @hpma = HelloProjectMusicAward.new(2011, 110, 6.5, 3)
             @lyric_links = {

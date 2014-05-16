@@ -14,7 +14,7 @@ module Acme
             @name = "私、ちょいとかわいい裏番長"
             @name_romaji = "watashi choito kawaii urabancho"
             @nicknames = ["ちょいかわ", "ちょいかわ番長", "裏番長"]
-            @duration = 254 # 04:14
+            @play_time = 254 # 04:14
             @arrangers = ["板垣祐介"]
             @hpma = HelloProjectMusicAward.new(2012, 20, 253.5, 113)
             @lyric_links = {

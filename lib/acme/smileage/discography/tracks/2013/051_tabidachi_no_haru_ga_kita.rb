@@ -14,7 +14,7 @@ module Acme
             @name = "旅立ちの春が来た"
             @name_romaji = "tabidachi no haru ga kita"
             @nicknames = ["旅春"]
-            @duration = 292 # 04:52
+            @play_time = 292 # 04:52
             @arrangers = ["大久保薫"]
             @hpma = HelloProjectMusicAward.new(2013, 27, 266.0, 174)
             @lyric_links = {

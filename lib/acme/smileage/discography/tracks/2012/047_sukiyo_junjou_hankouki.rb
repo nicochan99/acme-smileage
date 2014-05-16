@@ -14,7 +14,7 @@ module Acme
             @name = "好きよ、純情反抗期。"
             @name_romaji = "sukiyo, junjou hankouki."
             @nicknames = ["好き純"]
-            @duration = 288 # 04:48
+            @play_time = 288 # 04:48
             @arrangers = ["大久保薫"]
             @hpma = HelloProjectMusicAward.new(2012, 21, 241.5, 132)
             @lyric_links = {

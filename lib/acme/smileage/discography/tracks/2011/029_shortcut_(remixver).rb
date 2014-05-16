@@ -14,7 +14,7 @@ module Acme
             @name = "ショートカット (Remix.Ver)"
             @name_romaji = "shortcut (remix.ver)"
             @nicknames = []
-            @duration = 268 # 04:28
+            @play_time = 268 # 04:28
             @arrangers = ["平田祥一郎"]
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-110209-011",

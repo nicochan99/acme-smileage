@@ -15,7 +15,7 @@ module Acme
         class Base
           DEFAULT_USER_AGENT = "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)"
 
-          attr_reader :name, :name_romaji, :nicknames, :duration
+          attr_reader :name, :name_romaji, :nicknames, :play_time
           attr_reader :lyricists, :composers, :arrangers
           attr_reader :hpma
           attr_reader :lyric_links, :youtube_links, :itunes_links

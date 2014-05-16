@@ -14,7 +14,7 @@ module Acme
             @name = "夢見る 15歳"
             @name_romaji = "yumemiru 15sai"
             @nicknames = ["夢フィフ", "夢15"]
-            @duration = 223 # 03:43
+            @play_time = 223 # 03:43
             @arrangers = ["平田祥一郎"]
             @hpma = HelloProjectMusicAward.new(2010, 4, 391.5, 189)
             @lyric_links = {

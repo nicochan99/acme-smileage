@@ -14,7 +14,7 @@ module Acme
             @name = "新・日本のすすめ！"
             @name_romaji = "shin nihon no susume!"
             @nicknames = ["親日", "新日本"]
-            @duration = 246 # 04:06
+            @play_time = 246 # 04:06
             @arrangers = ["大久保薫"]
             @hpma = HelloProjectMusicAward.new(2013, 13, 614.0, 333)
             @lyric_links = {

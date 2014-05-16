@@ -14,7 +14,7 @@ module Acme
             @name = "黄色い自転車とサンドウィッチ"
             @name_romaji = "kiiroi jitensha to sandwich"
             @nicknames = ["黄色い自転車"]
-            @duration = 233 # 03:53
+            @play_time = 233 # 03:53
             @arrangers = ["オオバコウスケ"]
             @hpma = HelloProjectMusicAward.new(2012, 32, 123.0, 69)
             @lyric_links = {

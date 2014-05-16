@@ -14,7 +14,7 @@ module Acme
             @name = "スマイレージ シングルス 激萌えリミックス"
             @name_romaji = "smileage singles gekimoe remix"
             @nicknames = []
-            @duration = 336 # 05:36
+            @play_time = 336 # 05:36
             @arrangers = ["田中直"]
             @hpma = HelloProjectMusicAward.new(2011, 121, 4.5, 3)
             @lyric_links = {}

@@ -14,7 +14,7 @@ module Acme
             @name = "すまいるブルース／須磨入姉妹"
             @name_romaji = "smile blues"
             @nicknames = []
-            @duration = 230 # 03:50
+            @play_time = 230 # 03:50
             @arrangers = ["高橋諭一"]
             @hpma = HelloProjectMusicAward.new(2012, 131, 5.0, 3)
             @lyric_links = {

@@ -14,7 +14,7 @@ module Acme
             @name = "君は自転車 私は電車で帰宅"
             @name_romaji = "kimi ha jitensha watasi ha densya de kitaku"
             @nicknames = ["君チャリ"]
-            @duration = 295 # 04:55
+            @play_time = 295 # 04:55
             @arrangers = ["山崎淳"]
             @hpma = HelloProjectMusicAward.new(2012, 100, 13.0, 11)
             @lyric_links = {

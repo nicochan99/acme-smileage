@@ -14,7 +14,7 @@ module Acme
             @name = "同じ時給で働く友達の美人ママ"
             @name_romaji = "onaji jikyuu de hataraku tomodachi no bijin mama"
             @nicknames = ["時給", "美人ママ"]
-            @duration = 249 # 04:09
+            @play_time = 249 # 04:09
             @arrangers = ["山崎淳"]
             @hpma = HelloProjectMusicAward.new(2010, 47, 43.5, 32)
             @lyric_links = {

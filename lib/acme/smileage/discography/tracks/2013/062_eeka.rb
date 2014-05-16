@@ -14,7 +14,7 @@ module Acme
             @name = "ええか！？"
             @name_romaji = "eeka!?"
             @nicknames = []
-            @duration = 233 # 03:53
+            @play_time = 233 # 03:53
             @arrangers = ["近藤圭一"]
             @lyric_links = {
               :utamap => "http://www.utamap.com/showkasi.php?surl=k-131218-069",

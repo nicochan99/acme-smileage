@@ -14,7 +14,7 @@ module Acme
             @name = "シューティング スター"
             @name_romaji = "shooting star"
             @nicknames = []
-            @duration = 239 # 03:59
+            @play_time = 239 # 03:59
             @arrangers = ["湯浅公一"]
             @hpma = HelloProjectMusicAward.new(2011, 25, 112.0, 64)
             @lyric_links = {

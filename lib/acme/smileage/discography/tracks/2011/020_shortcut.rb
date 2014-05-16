@@ -14,7 +14,7 @@ module Acme
             @name = "ショートカット"
             @name_romaji = "shortcut"
             @nicknames = []
-            @duration = 268 # 04:28
+            @play_time = 268 # 04:28
             @arrangers = ["平田祥一郎"]
             @hpma = HelloProjectMusicAward.new(2011, 4, 363.5, 175)
             @lyric_links = {
