@@ -47,7 +47,7 @@ Or install it yourself as:
     p member.nicknames                         #=> ["‚è‚È‚Õ`"]
     p member.member_color                      #=> "Yellow"
     p member.blog_link                         #=> "http://ameblo.jp/smileage-submember/"
-    p member.twitter_accounts                  #=>  ["@smileage_newmem"]
+    p member.twitter_accounts                  #=>  ["@smileage_newmem", "@smileage_715"]
     p member.generation                        #=> 2
     p member.join_date                         #=> #<Date: 2011-08-14 ((2455788j,0s,0n),+0s,2299161j)>
     p member.graduate_date                     #=> nil
