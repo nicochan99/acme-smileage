@@ -26,6 +26,14 @@ module Acme
           @weeks_on_chart = weeks_on_chart
         end
 
+        def first_week_to_total_ratio
+          self.total_sales.zero? ? 0 : self.first_week_sales.to_f / self.total_sales.to_f
+        end
+
+        def total_to_first_week_ratio
+          self.first_week_sales.zero? ? 0 : self.total_sales.to_f / self.first_week_sales.to_f
+        end
+
         def to_a
           [self.first_week_sales, self.total_sales, self.peak_rank, self.weeks_on_chart]
         end
