@@ -9,7 +9,7 @@ module Acme
       module Albums
         class Base
           attr_reader :name, :name_romaji, :nicknames, :release_date, :artwork_links, :discography_link
-          attr_reader :oricon
+          attr_reader :oricon, :soundscan
           attr_reader :tracks
 
           def release_year; self.release_date.year; end

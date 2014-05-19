@@ -15,6 +15,7 @@ module Acme
             @nicknames = ["恋ブー"]
             @release_date = Date.new(2011, 4, 27)
             @oricon = Sales.new(19049, 20954, 6, 3)
+            @soundscan = Sales.new(0, 0, 0, 0) # http://www.phileweb.com/ranking/cd-top20/1516.html
             @discography_link = "http://s-mileage.jp/discography/detail_00068/"
             @artwork_links = [
               {

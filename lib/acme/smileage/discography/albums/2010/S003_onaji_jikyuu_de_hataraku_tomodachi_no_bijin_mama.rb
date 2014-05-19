@@ -15,6 +15,7 @@ module Acme
             @nicknames = ["時給", "美人ママ"]
             @release_date = Date.new(2010, 9, 29)
             @oricon = Sales.new(17998, 29533, 5, 7)
+            @soundscan = Sales.new(0, 0, 0, 0) # http://www.phileweb.com/ranking/cd-top20/1455.html
             @discography_link = "http://s-mileage.jp/discography/detail_00039/"
             @artwork_links = [
               {

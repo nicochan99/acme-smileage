@@ -15,6 +15,7 @@ module Acme
             @nicknames = []
             @release_date = Date.new(2010, 11, 3)
             @oricon = nil
+            @soundscan = nil
             @discography_link = "http://s-mileage.jp/discography/detail_00051/"
             @artwork_links = [
               {

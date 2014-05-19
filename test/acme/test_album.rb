@@ -14,6 +14,7 @@ class Acme::TestAlbum < Minitest::Test
     assert_equal Date.new(2010, 5, 26), a.release_date
     assert_equal 2010, a.release_year
     assert_equal [20438, 24936, 5, 4], a.oricon.to_a
+    assert_equal [8494, 8494, 17, 1], a.soundscan.to_a
 
     artwork_links = [
       {
@@ -54,6 +55,7 @@ class Acme::TestAlbum < Minitest::Test
     assert_equal Date.new(2009, 6, 7), a.release_date
     assert_equal 2009, a.release_year
     assert_equal [0, 0, 0, 0], a.oricon.to_a
+    assert_equal [0, 0, 0, 0], a.soundscan.to_a
     artwork_links = [
       {
         :title => "ぁまのじゃく",
@@ -113,6 +115,7 @@ class Acme::TestAlbum < Minitest::Test
     assert_equal Date.new(2010, 12, 8), a.release_date
     assert_equal 2010, a.release_year
     assert_equal [8905, 11848, 18, 5], a.oricon.to_a
+    assert_equal [0, 0, 0, 0], a.soundscan.to_a
 
     artwork_links = [
       {
@@ -159,6 +162,7 @@ class Acme::TestAlbum < Minitest::Test
     assert_equal [], a.nicknames
     assert_equal Date.new(2012, 5, 30), a.release_date
     assert_equal [6339, 8095, 13, 3], a.oricon.to_a
+    assert_equal [0, 0, 0, 0], a.soundscan.to_a
     artwork_links = [
       {
         :title => "スマイレージ ベストアルバム完全版① 【通常盤】",

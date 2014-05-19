@@ -18,6 +18,7 @@ module Acme
               { :week => 1, :sales => 34340, :rank =>  2 },
               { :week => 2, :sales =>  1047, :rank => 56 },
             )
+            @soundscan = Sales.new(6921 + 6256, 6921 + 6256, 12, 1) # http://www.phileweb.com/ranking/cd-top20/1830.html
             @discography_link = "http://s-mileage.jp/discography/detail_00186/"
             @artwork_links = [
               {
